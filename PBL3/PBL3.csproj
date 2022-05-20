@@ -157,11 +157,11 @@
     <Compile Include="Views\CommonForm\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CommonForm\HouseInfomationForm.cs">
+    <Compile Include="Views\CommonForm\HouseInformationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\CommonForm\HouseInfomationForm.Designer.cs">
-      <DependentUpon>HouseInfomationForm.cs</DependentUpon>
+    <Compile Include="Views\CommonForm\HouseInformationForm.Designer.cs">
+      <DependentUpon>HouseInformationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\CommonForm\InformationForm.cs">
       <SubType>Form</SubType>
@@ -269,8 +269,8 @@
     <EmbeddedResource Include="Views\CommonForm\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\CommonForm\HouseInfomationForm.resx">
-      <DependentUpon>HouseInfomationForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CommonForm\HouseInformationForm.resx">
+      <DependentUpon>HouseInformationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CommonForm\InformationForm.resx">
       <DependentUpon>InformationForm.cs</DependentUpon>

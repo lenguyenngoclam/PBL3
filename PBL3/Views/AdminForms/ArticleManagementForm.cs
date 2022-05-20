@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.Views.CommonForm;
 
 namespace PBL3.Views.AdminForms
 {
@@ -15,6 +16,12 @@ namespace PBL3.Views.AdminForms
         public ArticleManagementForm()
         {
             InitializeComponent();
+        }
+
+        private void readBtn_Click(object sender, EventArgs e)
+        {
+            HouseInformationForm form = new HouseInformationForm();
+            form.Show();
         }
     }
 }
