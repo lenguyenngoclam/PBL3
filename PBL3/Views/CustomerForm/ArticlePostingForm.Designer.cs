@@ -544,6 +544,7 @@ namespace PBL3.Views.CustomerForm
             this.Controls.Add(this.customPanel1);
             this.MinimumSize = new System.Drawing.Size(1736, 1609);
             this.Name = "ArticlePostingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ArticlePostingForm";
             this.customPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

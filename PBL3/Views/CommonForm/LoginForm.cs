@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.Views.AdminForms;
 
 namespace PBL3.Views.CommonForm
 {
     public partial class LoginForm : Form
     {
+        public delegate void MyDel ();
+        public MyDel hideParentForm;
+        public MyDel closeParentForm;
         public LoginForm()
         {
             InitializeComponent();
@@ -22,5 +26,12 @@ namespace PBL3.Views.CommonForm
 
         }
 
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            hideParentForm();
+            AdminMainPage form = new AdminMainPage();
+            form.ShowDialog();
+            closeParentForm();
+        }
     }
 }

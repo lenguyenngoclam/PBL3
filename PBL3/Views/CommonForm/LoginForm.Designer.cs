@@ -124,6 +124,7 @@ namespace PBL3.Views.CommonForm
             this.loginBtn.Text = "Đăng nhập";
             this.loginBtn.TextColor = System.Drawing.Color.White;
             this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // forgotPassLinkLabel
             // 

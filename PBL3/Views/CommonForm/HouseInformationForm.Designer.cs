@@ -414,6 +414,7 @@ namespace PBL3.Views.CommonForm
             this.Controls.Add(this.customPanel1);
             this.MinimumSize = new System.Drawing.Size(1640, 1240);
             this.Name = "HouseInformationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HouseInformationForm";
             this.customPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

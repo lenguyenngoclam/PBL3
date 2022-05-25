@@ -25,7 +25,10 @@ namespace PBL3.Views.CommonForm
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new LoginForm());
+            LoginForm form = new LoginForm();
+            form.hideParentForm = HideMainPageForm;
+            form.closeParentForm = CloseMainPageForm;
+            OpenChildForm(form);
         }
 
         private void signupBtn_Click(object sender, EventArgs e)
@@ -47,5 +50,13 @@ namespace PBL3.Views.CommonForm
             form.Show();
         }
 
+        private void CloseMainPageForm()
+        {
+            this.Close();
+        }
+        private void HideMainPageForm()
+        {
+            this.Hide();
+        }
     }
 }
