@@ -120,6 +120,7 @@ namespace PBL3.Views.CustomerForm
             this.uploadBtn.Text = "Đăng bài";
             this.uploadBtn.TextColor = System.Drawing.Color.White;
             this.uploadBtn.UseVisualStyleBackColor = false;
+            this.uploadBtn.Click += new System.EventHandler(this.uploadBtn_Click);
             // 
             // updateBtn
             // 
@@ -140,6 +141,7 @@ namespace PBL3.Views.CustomerForm
             this.updateBtn.Text = "Cập nhật bài đăng";
             this.updateBtn.TextColor = System.Drawing.Color.White;
             this.updateBtn.UseVisualStyleBackColor = false;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // readBtn
             // 

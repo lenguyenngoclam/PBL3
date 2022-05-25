@@ -21,7 +21,19 @@ namespace PBL3.Views.CustomerForm
         private void readBtn_Click(object sender, EventArgs e)
         {
             HouseInformationForm form = new HouseInformationForm();
-            form.Show();
+            form.ShowDialog();
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            ArticleUpdateForm form = new ArticleUpdateForm();
+            form.ShowDialog();
+        }
+
+        private void uploadBtn_Click(object sender, EventArgs e)
+        {
+            ArticlePostingForm form = new ArticlePostingForm();
+            form.ShowDialog();
         }
     }
 }

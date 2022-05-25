@@ -65,8 +65,8 @@ namespace PBL3.Views.AdminForms
             this.customPanel1.GradientAngle = 90F;
             this.customPanel1.GradientBottonColor = System.Drawing.Color.Azure;
             this.customPanel1.GradientTopColor = System.Drawing.Color.Azure;
-            this.customPanel1.Location = new System.Drawing.Point(86, 113);
-            this.customPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customPanel1.Location = new System.Drawing.Point(160, 135);
+            this.customPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.customPanel1.Name = "customPanel1";
             this.customPanel1.Size = new System.Drawing.Size(1582, 910);
             this.customPanel1.TabIndex = 0;
@@ -91,7 +91,7 @@ namespace PBL3.Views.AdminForms
             this.customPanel2.GradientBottonColor = System.Drawing.Color.Azure;
             this.customPanel2.GradientTopColor = System.Drawing.Color.Azure;
             this.customPanel2.Location = new System.Drawing.Point(4, 4);
-            this.customPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.customPanel2.Name = "customPanel2";
             this.customPanel2.Size = new System.Drawing.Size(1582, 910);
             this.customPanel2.TabIndex = 1;
@@ -109,7 +109,7 @@ namespace PBL3.Views.AdminForms
             this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBtn.ForeColor = System.Drawing.Color.White;
             this.deleteBtn.Location = new System.Drawing.Point(616, 823);
-            this.deleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(4);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(212, 52);
             this.deleteBtn.TabIndex = 9;
@@ -130,7 +130,7 @@ namespace PBL3.Views.AdminForms
             this.confirmBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmBtn.ForeColor = System.Drawing.Color.White;
             this.confirmBtn.Location = new System.Drawing.Point(1244, 823);
-            this.confirmBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.confirmBtn.Margin = new System.Windows.Forms.Padding(4);
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(212, 52);
             this.confirmBtn.TabIndex = 7;
@@ -151,7 +151,7 @@ namespace PBL3.Views.AdminForms
             this.readBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.readBtn.ForeColor = System.Drawing.Color.White;
             this.readBtn.Location = new System.Drawing.Point(928, 823);
-            this.readBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.readBtn.Margin = new System.Windows.Forms.Padding(4);
             this.readBtn.Name = "readBtn";
             this.readBtn.Size = new System.Drawing.Size(212, 52);
             this.readBtn.TabIndex = 6;
@@ -173,7 +173,7 @@ namespace PBL3.Views.AdminForms
             this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBtn.ForeColor = System.Drawing.Color.White;
             this.searchBtn.Location = new System.Drawing.Point(1176, 190);
-            this.searchBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(4);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(280, 52);
             this.searchBtn.TabIndex = 5;
@@ -210,10 +210,10 @@ namespace PBL3.Views.AdminForms
             this.trangThaiThueCbb.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.trangThaiThueCbb.ListTextColor = System.Drawing.Color.DimGray;
             this.trangThaiThueCbb.Location = new System.Drawing.Point(712, 190);
-            this.trangThaiThueCbb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trangThaiThueCbb.Margin = new System.Windows.Forms.Padding(4);
             this.trangThaiThueCbb.MinimumSize = new System.Drawing.Size(300, 52);
             this.trangThaiThueCbb.Name = "trangThaiThueCbb";
-            this.trangThaiThueCbb.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.trangThaiThueCbb.Padding = new System.Windows.Forms.Padding(4);
             this.trangThaiThueCbb.Size = new System.Drawing.Size(300, 52);
             this.trangThaiThueCbb.TabIndex = 3;
             this.trangThaiThueCbb.Texts = "";
@@ -248,7 +248,7 @@ namespace PBL3.Views.AdminForms
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(176, 331);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -313,7 +313,7 @@ namespace PBL3.Views.AdminForms
             this.customPanel3.GradientBottonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(109)))));
             this.customPanel3.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(109)))));
             this.customPanel3.Location = new System.Drawing.Point(0, 0);
-            this.customPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.customPanel3.Name = "customPanel3";
             this.customPanel3.Size = new System.Drawing.Size(1582, 92);
             this.customPanel3.TabIndex = 1;
@@ -339,9 +339,9 @@ namespace PBL3.Views.AdminForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PBL3.Properties.Resources.loginBackgroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1520, 1023);
+            this.ClientSize = new System.Drawing.Size(1668, 1067);
             this.Controls.Add(this.customPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ArticleManagementForm";
             this.Text = "ArticleManagementForm";
             this.customPanel1.ResumeLayout(false);

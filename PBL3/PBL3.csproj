@@ -223,6 +223,18 @@
     <Compile Include="Views\CustomerForm\ArticleManagementForm.Designer.cs">
       <DependentUpon>ArticleManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\CustomerForm\ArticlePostingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerForm\ArticlePostingForm.Designer.cs">
+      <DependentUpon>ArticlePostingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CustomerForm\ArticleUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomerForm\ArticleUpdateForm.Designer.cs">
+      <DependentUpon>ArticleUpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CustomerForm\ChangePhoneNumberForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +307,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerForm\ArticleManagementForm.resx">
       <DependentUpon>ArticleManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerForm\ArticlePostingForm.resx">
+      <DependentUpon>ArticlePostingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomerForm\ArticleUpdateForm.resx">
+      <DependentUpon>ArticleUpdateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerForm\ChangePhoneNumberForm.resx">
       <DependentUpon>ChangePhoneNumberForm.cs</DependentUpon>
