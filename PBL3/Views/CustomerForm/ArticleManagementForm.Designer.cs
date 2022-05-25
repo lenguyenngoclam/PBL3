@@ -160,6 +160,7 @@ namespace PBL3.Views.CustomerForm
             this.readBtn.Text = "Xem bài đăng";
             this.readBtn.TextColor = System.Drawing.Color.White;
             this.readBtn.UseVisualStyleBackColor = false;
+            this.readBtn.Click += new System.EventHandler(this.readBtn_Click);
             // 
             // searchBtn
             // 
