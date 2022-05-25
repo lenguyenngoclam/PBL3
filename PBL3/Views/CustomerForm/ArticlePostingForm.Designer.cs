@@ -118,6 +118,7 @@ namespace PBL3.Views.CustomerForm
             this.discardBtn.Text = "Huỷ";
             this.discardBtn.TextColor = System.Drawing.Color.White;
             this.discardBtn.UseVisualStyleBackColor = false;
+            this.discardBtn.Click += new System.EventHandler(this.discardBtn_Click);
             // 
             // uploadBtn
             // 
@@ -228,6 +229,7 @@ namespace PBL3.Views.CustomerForm
             this.uploadImgBtn.Text = "Thêm ảnh";
             this.uploadImgBtn.TextColor = System.Drawing.Color.White;
             this.uploadImgBtn.UseVisualStyleBackColor = false;
+            this.uploadImgBtn.Click += new System.EventHandler(this.uploadImgBtn_Click);
             // 
             // customTextBox2
             // 

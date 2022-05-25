@@ -129,6 +129,7 @@ namespace PBL3.Views.CustomerForm
             this.discardBtn.Text = "Huỷ";
             this.discardBtn.TextColor = System.Drawing.Color.White;
             this.discardBtn.UseVisualStyleBackColor = false;
+            this.discardBtn.Click += new System.EventHandler(this.discardBtn_Click);
             // 
             // updateBtn
             // 
@@ -149,6 +150,7 @@ namespace PBL3.Views.CustomerForm
             this.updateBtn.Text = "Cập nhật";
             this.updateBtn.TextColor = System.Drawing.Color.White;
             this.updateBtn.UseVisualStyleBackColor = false;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // groupBox1
             // 
@@ -238,7 +240,7 @@ namespace PBL3.Views.CustomerForm
             this.changeImgBtn.Text = "Sửa ảnh";
             this.changeImgBtn.TextColor = System.Drawing.Color.White;
             this.changeImgBtn.UseVisualStyleBackColor = false;
-            this.changeImgBtn.Click += new System.EventHandler(this.addImgBtn_Click);
+            this.changeImgBtn.Click += new System.EventHandler(this.changeImgBtn_Click);
             // 
             // customTextBox2
             // 
