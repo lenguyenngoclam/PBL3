@@ -35,7 +35,7 @@ namespace PBL3.Views.CommonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1258, 568);
+            this.ClientSize = new System.Drawing.Size(1290, 568);
             this.Name = "HouseInfomationForm";
             this.Text = "HouseInfomationForm";
             this.ResumeLayout(false);

@@ -196,6 +196,7 @@ namespace PBL3.Views.CommonForm
             this.MinimumSize = new System.Drawing.Size(2000, 1150);
             this.Name = "MainPageForm";
             this.Text = "MainPageForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelMenu.ResumeLayout(false);
