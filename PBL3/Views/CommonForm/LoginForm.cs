@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL3.Views.AdminForms;
+using PBL3.Views.CustomerForm;
 
 namespace PBL3.Views.CommonForm
 {
@@ -29,8 +30,15 @@ namespace PBL3.Views.CommonForm
         private void loginBtn_Click(object sender, EventArgs e)
         {
             hideParentForm();
-            AdminMainPage form = new AdminMainPage();
-            form.ShowDialog();
+            if(usernameTextbox.Texts == "admin")
+            {
+                AdminMainPage form = new AdminMainPage();
+                form.ShowDialog();
+            } else if(usernameTextbox.Texts == "user")
+            {
+                CustomerMainPage form = new CustomerMainPage();
+                form.ShowDialog();
+            }
             closeParentForm();
         }
     }

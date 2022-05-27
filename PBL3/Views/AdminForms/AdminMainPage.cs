@@ -49,7 +49,8 @@ namespace PBL3.Views.AdminForms
 
         private void MessageBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Chatbox());
+            AdminChatBox form = new AdminChatBox();
+            OpenChildForm(form);
         }
     }
 }

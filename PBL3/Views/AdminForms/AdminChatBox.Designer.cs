@@ -1,7 +1,7 @@
 ﻿
-namespace PBL3.Views.CommonForm
+namespace PBL3.Views.AdminForms
 {
-    partial class Chatbox
+    partial class AdminChatBox
     {
         /// <summary>
         /// Required designer variable.
@@ -89,7 +89,7 @@ namespace PBL3.Views.CommonForm
             this.sendBtn.UseVisualStyleBackColor = false;
             this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
             // 
-            // Chatbox
+            // AdminChatBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,9 +99,9 @@ namespace PBL3.Views.CommonForm
             this.Controls.Add(this.sendBtn);
             this.Controls.Add(this.messageTextbox);
             this.Controls.Add(this.listView1);
-            this.Name = "Chatbox";
+            this.Name = "AdminChatBox";
             this.Text = "Chatbox";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Chatbox_FormClosed);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminChatBox_FormClosed);
             this.ResumeLayout(false);
 
         }

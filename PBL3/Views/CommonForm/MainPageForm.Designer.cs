@@ -197,6 +197,7 @@ namespace PBL3.Views.CommonForm
             this.Name = "MainPageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainPageForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelMenu.ResumeLayout(false);

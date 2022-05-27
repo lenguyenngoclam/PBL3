@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -71,7 +72,16 @@ namespace PBL3.Views.CustomerForm
         private void MessageBtn_Click(object sender, EventArgs e)
         {
             hideSubmenu();
-            OpenChildForm(new Chatbox());
+            try
+            {
+                Chatbox form = new Chatbox();
+                form.errorDel = OpenChildForm;
+                OpenChildForm(form);
+            } catch (SocketException ex)
+            {
+                MessageBox.Show("Admin đang offline");
+                OpenChildForm(new Dashboard());
+            }
         }
 
         private void signOutBtn_Click(object sender, EventArgs e)

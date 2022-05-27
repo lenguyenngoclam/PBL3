@@ -247,7 +247,7 @@ namespace PBL3.Views.AdminForms
             this.MinimumSize = new System.Drawing.Size(2000, 1150);
             this.Name = "AdminMainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainPageForm";
+            this.Text = "Admin Main Page";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

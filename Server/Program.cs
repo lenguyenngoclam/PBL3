@@ -3,11 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.Views.CommonForm;
-using PBL3.Views.CustomerForm;
-using PBL3.Views.AdminForms;
 
-namespace PBL3
+namespace Server
 {
     static class Program
     {
@@ -19,7 +16,7 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainPageForm());
+            Application.Run(new Server());
         }
     }
 }

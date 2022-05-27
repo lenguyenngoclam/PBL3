@@ -13,17 +13,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBL3.Views.CommonForm
+namespace Server
 {
-    public partial class Chatbox : Form
+    public partial class Server : Form
     {
-        public delegate void ErrorDel(Form form);
-        public ErrorDel errorDel;
-
         private IPAddress ipAddr;
         private IPEndPoint localEndPoint;
-        private Socket sender;
-        public Chatbox()
+        private Socket server;
+        private List<Socket> clients;
+        public Server()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
@@ -32,76 +30,87 @@ namespace PBL3.Views.CommonForm
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            Send();
-            addMessageToListview("You : \t" + messageTextbox.Texts);
+            foreach(Socket client in clients)
+            {
+                Send(client);
+            }
+            messageTextbox.Clear();
         }
 
         private void Connect()
-        {
-            ipAddr = IPAddress.Parse("127.0.0.1");
+        { 
+            clients = new List<Socket>();
+            IPHostEntry ipHost = Dns.GetHostEntry(Dns.GetHostName());
+            ipAddr = IPAddress.Any;
             localEndPoint = new IPEndPoint(ipAddr, 11111);
-            sender = new Socket(AddressFamily.InterNetwork,
+            server = new Socket(AddressFamily.InterNetwork,
                SocketType.Stream, ProtocolType.IP);
 
             try
             {
-                sender.Connect(localEndPoint);
-            }
-            // Manage of Socket's Exceptions
-            catch (ArgumentNullException ane)
-            {
+                server.Bind(localEndPoint);
+                Thread listen = new Thread(() =>
+                {
+                    try
+                    {
+                        while (true)
+                        {
+                            server.Listen(10);
+                            Socket client = server.Accept();
+                            clients.Add(client);
 
-                MessageBox.Show("ArgumentNullException : {0}", ane.ToString());
-            }
+                            Thread recieve = new Thread(Receive);
+                            recieve.IsBackground = true;
+                            recieve.Start(client);
+                        }
+                    } catch
+                    {
+                        ipAddr = ipHost.AddressList[0];
+                        localEndPoint = new IPEndPoint(IPAddress.Any, 11111);
 
-            catch (SocketException se)
-            {
-                throw;
+                        server = new Socket(ipAddr.AddressFamily,
+                                     SocketType.Stream, ProtocolType.Tcp);
+                    }
+                });
+                listen.IsBackground = true;
+                listen.Start();
             }
 
             catch (Exception e)
             {
-                MessageBox.Show("Unexpected exception : {0}", e.ToString());
+                Console.WriteLine(e.ToString());
             }
-
-            Thread listen = new Thread(Receive);
-            listen.IsBackground = true;
-            listen.Start();
         }
 
         private void Close()
         {
-            sender.Close();
+            server.Close();
         }
 
-        private void Send()
+        private void Send(Socket client)
         {
-            if (!sender.Connected)
-            {
-                MessageBox.Show("Admin đã rời khỏi cuộc trò chuyện");
-                errorDel(new Dashboard());
-            } else
-            {
-                if (messageTextbox.Texts != String.Empty)
-                    sender.Send(Serialize("User : \t" + messageTextbox.Texts));
-            }
+            if (messageTextbox.Text != String.Empty)
+                client.Send(Serialize(messageTextbox.Text));
         }
 
-        private void Receive()
+        private void Receive(object obj)
         {
+            Socket client = (Socket)obj;
             try
             {
                 while (true)
                 {
                     byte[] data = new byte[1024 * 1000];
-                    sender.Receive(data);
+                    client.Receive(data);
 
                     string message = (string)Deserialize(data);
                     addMessageToListview(message);
                 }
-            } catch
+            }
+            catch
             {
-                Close();
+                clients.Remove(client);
+                client.Close();
             }
         }
 
@@ -129,12 +138,6 @@ namespace PBL3.Views.CommonForm
             {
                 Text = message
             });
-            messageTextbox.Texts = "";
-        }
-
-        private void Chatbox_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Close();
         }
     }
 }
