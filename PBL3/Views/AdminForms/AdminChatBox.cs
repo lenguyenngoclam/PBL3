@@ -142,6 +142,13 @@ namespace PBL3.Views.AdminForms
             }
         }
 
+        private void Disconnect(object obj)
+        {
+            Socket client = (Socket)obj;
+            clients.Remove(client);
+            client.Close();
+        }
+
         private byte[] Serialize(object obj)
         {
             MemoryStream stream = new MemoryStream();
@@ -173,5 +180,15 @@ namespace PBL3.Views.AdminForms
             ServerClose();
         }
 
+        private void disconnectBtn_Click(object sender, EventArgs e)
+        {
+            if (clients.Count != 0)
+                Disconnect(clients[0]);
+            else
+            {
+                MessageBox.Show("Hiện không có người dùng nào đang online");
+                messageTextbox.Texts = "";
+            }
+        }
     }
 }
