@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL3.Views.AdminForms;
 using PBL3.Views.CustomerForm;
+using PBL3.Views.RenterForm;
 
 namespace PBL3.Views.CommonForm
 {
@@ -37,6 +38,10 @@ namespace PBL3.Views.CommonForm
             } else if(usernameTextbox.Texts == "user")
             {
                 CustomerMainPage form = new CustomerMainPage();
+                form.ShowDialog();
+            } else
+            {
+                RenterMainPage form = new RenterMainPage();
                 form.ShowDialog();
             }
             closeParentForm();

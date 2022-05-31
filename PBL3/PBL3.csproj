@@ -259,6 +259,12 @@
     <Compile Include="Views\CustomerForm\InformationUpdateForm.Designer.cs">
       <DependentUpon>InformationUpdateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\RenterForm\RenterMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RenterForm\RenterMainPage.Designer.cs">
+      <DependentUpon>RenterMainPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -331,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerForm\InformationUpdateForm.resx">
       <DependentUpon>InformationUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RenterForm\RenterMainPage.resx">
+      <DependentUpon>RenterMainPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
