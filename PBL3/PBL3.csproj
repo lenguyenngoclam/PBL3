@@ -199,6 +199,12 @@
     <Compile Include="Views\CustomComponents\CustomComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Views\CustomComponents\CustomComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CustomComponents\CustomComment.Designer.cs">
+      <DependentUpon>CustomComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CustomComponents\CustomDatePicker.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -314,6 +320,9 @@
     <EmbeddedResource Include="Views\CustomComponents\CustomComboBox.resx">
       <DependentUpon>CustomComboBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomComponents\CustomComment.resx">
+      <DependentUpon>CustomComment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomComponents\CustomTextBox.resx">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -378,6 +387,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white-star.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

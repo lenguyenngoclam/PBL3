@@ -12,13 +12,6 @@ namespace PBL3.Views.CustomComponents
 {
     public partial class HouseInfoComponent : UserControl
     {
-        //Fields
-        private Image pictureBox = null;
-        private string homeLink = "";
-        private string moneyLabel = "";
-        private string descLabel = "";
-        private string areaLabel = "";
-        private string addressLabel = "";
         public HouseInfoComponent()
         {
             InitializeComponent();

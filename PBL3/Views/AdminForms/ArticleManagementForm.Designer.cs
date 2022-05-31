@@ -49,6 +49,8 @@ namespace PBL3.Views.AdminForms
             this.trangThaiThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customPanel3 = new PBL3.Views.CustomComponents.CustomPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.postedFilterCbb = new PBL3.Views.CustomComponents.CustomComboBox();
             this.customPanel1.SuspendLayout();
             this.customPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -78,6 +80,8 @@ namespace PBL3.Views.AdminForms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customPanel2.BackColor = System.Drawing.Color.White;
             this.customPanel2.BorderRadius = 50;
+            this.customPanel2.Controls.Add(this.postedFilterCbb);
+            this.customPanel2.Controls.Add(this.label3);
             this.customPanel2.Controls.Add(this.deleteBtn);
             this.customPanel2.Controls.Add(this.confirmBtn);
             this.customPanel2.Controls.Add(this.readBtn);
@@ -333,6 +337,43 @@ namespace PBL3.Views.AdminForms
             this.label1.Text = "QUẢN LÍ TIN ĐĂNG";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(272, 137);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(322, 26);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Lọc theo trạng thái đã phê duyệt";
+            // 
+            // postedFilterCbb
+            // 
+            this.postedFilterCbb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.postedFilterCbb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.postedFilterCbb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.postedFilterCbb.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.postedFilterCbb.BorderSize = 3;
+            this.postedFilterCbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.postedFilterCbb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.postedFilterCbb.ForeColor = System.Drawing.Color.DimGray;
+            this.postedFilterCbb.IconColor = System.Drawing.Color.Green;
+            this.postedFilterCbb.Items.AddRange(new object[] {
+            "Đã duyệt",
+            "Chưa duyệt"});
+            this.postedFilterCbb.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.postedFilterCbb.ListTextColor = System.Drawing.Color.DimGray;
+            this.postedFilterCbb.Location = new System.Drawing.Point(277, 190);
+            this.postedFilterCbb.Margin = new System.Windows.Forms.Padding(4);
+            this.postedFilterCbb.MinimumSize = new System.Drawing.Size(300, 52);
+            this.postedFilterCbb.Name = "postedFilterCbb";
+            this.postedFilterCbb.Padding = new System.Windows.Forms.Padding(4);
+            this.postedFilterCbb.Size = new System.Drawing.Size(300, 52);
+            this.postedFilterCbb.TabIndex = 11;
+            this.postedFilterCbb.Texts = "";
+            // 
             // ArticleManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -372,5 +413,7 @@ namespace PBL3.Views.AdminForms
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayDang;
         private System.Windows.Forms.DataGridViewTextBoxColumn khuVuc;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangThaiThue;
+        private CustomComponents.CustomComboBox postedFilterCbb;
+        private System.Windows.Forms.Label label3;
     }
 }
