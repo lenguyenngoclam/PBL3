@@ -6,7 +6,8 @@ using System.Windows.Forms;
 using PBL3.Views.CommonForm;
 using PBL3.Views.CustomerForm;
 using PBL3.Views.AdminForms;
-
+using PBL3.Views.RenterForm;
+using PBL3.DAL;
 namespace PBL3
 {
     static class Program
@@ -19,7 +20,8 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainPageForm());
+            Application.Run(new RenterMainPage());
+            
         }
     }
 }

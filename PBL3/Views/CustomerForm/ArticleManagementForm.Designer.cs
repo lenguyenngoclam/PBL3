@@ -32,7 +32,6 @@ namespace PBL3.Views.CustomerForm
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.customPanel1 = new PBL3.Views.CustomComponents.CustomPanel();
             this.deleteBtn = new PBL3.Views.CustomComponents.CustomButton();
             this.uploadBtn = new PBL3.Views.CustomComponents.CustomButton();
             this.updateBtn = new PBL3.Views.CustomComponents.CustomButton();
@@ -49,37 +48,14 @@ namespace PBL3.Views.CustomerForm
             this.ngayDang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khuVuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangThaiThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customPanel2 = new PBL3.Views.CustomComponents.CustomPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.customPanel1.SuspendLayout();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.customPanel2.SuspendLayout();
+            this.panelMenu.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // customPanel1
-            // 
-            this.customPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.customPanel1.BackColor = System.Drawing.Color.White;
-            this.customPanel1.BorderRadius = 50;
-            this.customPanel1.Controls.Add(this.deleteBtn);
-            this.customPanel1.Controls.Add(this.uploadBtn);
-            this.customPanel1.Controls.Add(this.updateBtn);
-            this.customPanel1.Controls.Add(this.readBtn);
-            this.customPanel1.Controls.Add(this.searchBtn);
-            this.customPanel1.Controls.Add(this.label2);
-            this.customPanel1.Controls.Add(this.trangThaiThueCbb);
-            this.customPanel1.Controls.Add(this.dataGridView1);
-            this.customPanel1.Controls.Add(this.customPanel2);
-            this.customPanel1.ForeColor = System.Drawing.Color.Black;
-            this.customPanel1.GradientAngle = 90F;
-            this.customPanel1.GradientBottonColor = System.Drawing.Color.Azure;
-            this.customPanel1.GradientTopColor = System.Drawing.Color.Azure;
-            this.customPanel1.Location = new System.Drawing.Point(41, 12);
-            this.customPanel1.Name = "customPanel1";
-            this.customPanel1.Size = new System.Drawing.Size(1582, 910);
-            this.customPanel1.TabIndex = 0;
             // 
             // deleteBtn
             // 
@@ -93,10 +69,11 @@ namespace PBL3.Views.CustomerForm
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteBtn.Location = new System.Drawing.Point(405, 823);
+            this.deleteBtn.Location = new System.Drawing.Point(133, 14);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(212, 52);
-            this.deleteBtn.TabIndex = 9;
+            this.deleteBtn.Size = new System.Drawing.Size(141, 33);
+            this.deleteBtn.TabIndex = 17;
             this.deleteBtn.Text = "Xoá bài đăng";
             this.deleteBtn.TextColor = System.Drawing.Color.White;
             this.deleteBtn.UseVisualStyleBackColor = false;
@@ -113,14 +90,14 @@ namespace PBL3.Views.CustomerForm
             this.uploadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uploadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uploadBtn.ForeColor = System.Drawing.Color.White;
-            this.uploadBtn.Location = new System.Drawing.Point(1315, 823);
+            this.uploadBtn.Location = new System.Drawing.Point(884, 14);
+            this.uploadBtn.Margin = new System.Windows.Forms.Padding(2);
             this.uploadBtn.Name = "uploadBtn";
-            this.uploadBtn.Size = new System.Drawing.Size(212, 52);
-            this.uploadBtn.TabIndex = 8;
+            this.uploadBtn.Size = new System.Drawing.Size(141, 33);
+            this.uploadBtn.TabIndex = 16;
             this.uploadBtn.Text = "Đăng bài";
             this.uploadBtn.TextColor = System.Drawing.Color.White;
             this.uploadBtn.UseVisualStyleBackColor = false;
-            this.uploadBtn.Click += new System.EventHandler(this.uploadBtn_Click);
             // 
             // updateBtn
             // 
@@ -134,14 +111,14 @@ namespace PBL3.Views.CustomerForm
             this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBtn.ForeColor = System.Drawing.Color.White;
-            this.updateBtn.Location = new System.Drawing.Point(1015, 823);
+            this.updateBtn.Location = new System.Drawing.Point(576, 14);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(2);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(212, 52);
-            this.updateBtn.TabIndex = 7;
+            this.updateBtn.Size = new System.Drawing.Size(141, 33);
+            this.updateBtn.TabIndex = 15;
             this.updateBtn.Text = "Cập nhật bài đăng";
             this.updateBtn.TextColor = System.Drawing.Color.White;
             this.updateBtn.UseVisualStyleBackColor = false;
-            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // readBtn
             // 
@@ -155,14 +132,14 @@ namespace PBL3.Views.CustomerForm
             this.readBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.readBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.readBtn.ForeColor = System.Drawing.Color.White;
-            this.readBtn.Location = new System.Drawing.Point(715, 823);
+            this.readBtn.Location = new System.Drawing.Point(356, 14);
+            this.readBtn.Margin = new System.Windows.Forms.Padding(2);
             this.readBtn.Name = "readBtn";
-            this.readBtn.Size = new System.Drawing.Size(212, 52);
-            this.readBtn.TabIndex = 6;
+            this.readBtn.Size = new System.Drawing.Size(141, 33);
+            this.readBtn.TabIndex = 14;
             this.readBtn.Text = "Xem bài đăng";
             this.readBtn.TextColor = System.Drawing.Color.White;
             this.readBtn.UseVisualStyleBackColor = false;
-            this.readBtn.Click += new System.EventHandler(this.readBtn_Click);
             // 
             // searchBtn
             // 
@@ -176,10 +153,11 @@ namespace PBL3.Views.CustomerForm
             this.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBtn.ForeColor = System.Drawing.Color.White;
-            this.searchBtn.Location = new System.Drawing.Point(1247, 181);
+            this.searchBtn.Location = new System.Drawing.Point(821, 14);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(2);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(280, 52);
-            this.searchBtn.TabIndex = 5;
+            this.searchBtn.Size = new System.Drawing.Size(187, 33);
+            this.searchBtn.TabIndex = 13;
             this.searchBtn.Text = "Tìm kiếm";
             this.searchBtn.TextColor = System.Drawing.Color.White;
             this.searchBtn.UseVisualStyleBackColor = false;
@@ -189,10 +167,11 @@ namespace PBL3.Views.CustomerForm
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(886, 130);
+            this.label2.Location = new System.Drawing.Point(50, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(239, 26);
-            this.label2.TabIndex = 4;
+            this.label2.Size = new System.Drawing.Size(159, 17);
+            this.label2.TabIndex = 12;
             this.label2.Text = "Lọc theo trạng thái thuê";
             // 
             // trangThaiThueCbb
@@ -211,17 +190,19 @@ namespace PBL3.Views.CustomerForm
             "200m^2"});
             this.trangThaiThueCbb.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.trangThaiThueCbb.ListTextColor = System.Drawing.Color.DimGray;
-            this.trangThaiThueCbb.Location = new System.Drawing.Point(857, 181);
-            this.trangThaiThueCbb.MinimumSize = new System.Drawing.Size(300, 52);
+            this.trangThaiThueCbb.Location = new System.Drawing.Point(326, 11);
+            this.trangThaiThueCbb.Margin = new System.Windows.Forms.Padding(2);
+            this.trangThaiThueCbb.MinimumSize = new System.Drawing.Size(200, 33);
             this.trangThaiThueCbb.Name = "trangThaiThueCbb";
-            this.trangThaiThueCbb.Padding = new System.Windows.Forms.Padding(3);
-            this.trangThaiThueCbb.Size = new System.Drawing.Size(300, 52);
-            this.trangThaiThueCbb.TabIndex = 3;
+            this.trangThaiThueCbb.Padding = new System.Windows.Forms.Padding(2);
+            this.trangThaiThueCbb.Size = new System.Drawing.Size(200, 33);
+            this.trangThaiThueCbb.TabIndex = 11;
             this.trangThaiThueCbb.Texts = "";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -250,8 +231,11 @@ namespace PBL3.Views.CustomerForm
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(50, 354);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 82;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
@@ -259,14 +243,15 @@ namespace PBL3.Views.CustomerForm
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1490, 414);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.Size = new System.Drawing.Size(1104, 616);
+            this.dataGridView1.TabIndex = 10;
             // 
             // maBai
             // 
             this.maBai.HeaderText = "Mã Bài";
             this.maBai.MinimumWidth = 10;
             this.maBai.Name = "maBai";
+            this.maBai.ReadOnly = true;
             this.maBai.Width = 200;
             // 
             // linkAnh
@@ -274,6 +259,7 @@ namespace PBL3.Views.CustomerForm
             this.linkAnh.HeaderText = "Link Ảnh";
             this.linkAnh.MinimumWidth = 10;
             this.linkAnh.Name = "linkAnh";
+            this.linkAnh.ReadOnly = true;
             this.linkAnh.Width = 200;
             // 
             // tieuDe
@@ -281,6 +267,7 @@ namespace PBL3.Views.CustomerForm
             this.tieuDe.HeaderText = "Tiêu Đề";
             this.tieuDe.MinimumWidth = 10;
             this.tieuDe.Name = "tieuDe";
+            this.tieuDe.ReadOnly = true;
             this.tieuDe.Width = 200;
             // 
             // gia
@@ -288,6 +275,7 @@ namespace PBL3.Views.CustomerForm
             this.gia.HeaderText = "Giá";
             this.gia.MinimumWidth = 10;
             this.gia.Name = "gia";
+            this.gia.ReadOnly = true;
             this.gia.Width = 200;
             // 
             // dienTich
@@ -295,6 +283,7 @@ namespace PBL3.Views.CustomerForm
             this.dienTich.HeaderText = "Diện Tích";
             this.dienTich.MinimumWidth = 10;
             this.dienTich.Name = "dienTich";
+            this.dienTich.ReadOnly = true;
             this.dienTich.Width = 200;
             // 
             // ngayDang
@@ -302,6 +291,7 @@ namespace PBL3.Views.CustomerForm
             this.ngayDang.HeaderText = "Ngày Đăng";
             this.ngayDang.MinimumWidth = 10;
             this.ngayDang.Name = "ngayDang";
+            this.ngayDang.ReadOnly = true;
             this.ngayDang.Width = 200;
             // 
             // khuVuc
@@ -309,6 +299,7 @@ namespace PBL3.Views.CustomerForm
             this.khuVuc.HeaderText = "Khu Vực";
             this.khuVuc.MinimumWidth = 10;
             this.khuVuc.Name = "khuVuc";
+            this.khuVuc.ReadOnly = true;
             this.khuVuc.Width = 200;
             // 
             // trangThaiThue
@@ -316,58 +307,78 @@ namespace PBL3.Views.CustomerForm
             this.trangThaiThue.HeaderText = "Trạng Thái Thuê";
             this.trangThaiThue.MinimumWidth = 10;
             this.trangThaiThue.Name = "trangThaiThue";
+            this.trangThaiThue.ReadOnly = true;
             this.trangThaiThue.Width = 200;
             // 
-            // customPanel2
+            // panelMenu
             // 
-            this.customPanel2.BackColor = System.Drawing.Color.White;
-            this.customPanel2.BorderRadius = 0;
-            this.customPanel2.Controls.Add(this.label1);
-            this.customPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.customPanel2.ForeColor = System.Drawing.Color.Black;
-            this.customPanel2.GradientAngle = 90F;
-            this.customPanel2.GradientBottonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(109)))));
-            this.customPanel2.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(109)))));
-            this.customPanel2.Location = new System.Drawing.Point(0, 0);
-            this.customPanel2.Name = "customPanel2";
-            this.customPanel2.Size = new System.Drawing.Size(1582, 92);
-            this.customPanel2.TabIndex = 1;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(140)))), ((int)(((byte)(153)))));
+            this.panelMenu.Controls.Add(this.label2);
+            this.panelMenu.Controls.Add(this.trangThaiThueCbb);
+            this.panelMenu.Controls.Add(this.searchBtn);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(1104, 62);
+            this.panelMenu.TabIndex = 18;
             // 
-            // label1
+            // panel1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(109)))));
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(519, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(547, 68);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "QUẢN LÍ TIN ĐĂNG";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(140)))), ((int)(((byte)(153)))));
+            this.panel1.Controls.Add(this.deleteBtn);
+            this.panel1.Controls.Add(this.readBtn);
+            this.panel1.Controls.Add(this.uploadBtn);
+            this.panel1.Controls.Add(this.updateBtn);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 554);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1104, 62);
+            this.panel1.TabIndex = 20;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(140)))), ((int)(((byte)(153)))));
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1104, 616);
+            this.panel2.TabIndex = 21;
             // 
             // ArticleManagementForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PBL3.Properties.Resources.loginBackgroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1656, 962);
-            this.Controls.Add(this.customPanel1);
+            this.ClientSize = new System.Drawing.Size(1104, 616);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ArticleManagementForm";
             this.Text = "ArticleManagementForm";
-            this.customPanel1.ResumeLayout(false);
-            this.customPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.customPanel2.ResumeLayout(false);
+            this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CustomComponents.CustomPanel customPanel1;
+        private CustomComponents.CustomButton deleteBtn;
+        private CustomComponents.CustomButton uploadBtn;
+        private CustomComponents.CustomButton updateBtn;
+        private CustomComponents.CustomButton readBtn;
+        private CustomComponents.CustomButton searchBtn;
+        private System.Windows.Forms.Label label2;
+        private CustomComponents.CustomComboBox trangThaiThueCbb;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn maBai;
         private System.Windows.Forms.DataGridViewTextBoxColumn linkAnh;
@@ -377,14 +388,8 @@ namespace PBL3.Views.CustomerForm
         private System.Windows.Forms.DataGridViewTextBoxColumn ngayDang;
         private System.Windows.Forms.DataGridViewTextBoxColumn khuVuc;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangThaiThue;
-        private CustomComponents.CustomPanel customPanel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private CustomComponents.CustomComboBox trangThaiThueCbb;
-        private CustomComponents.CustomButton searchBtn;
-        private CustomComponents.CustomButton deleteBtn;
-        private CustomComponents.CustomButton uploadBtn;
-        private CustomComponents.CustomButton updateBtn;
-        private CustomComponents.CustomButton readBtn;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

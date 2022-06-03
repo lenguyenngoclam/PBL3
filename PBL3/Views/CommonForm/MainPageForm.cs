@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using PBL3.DAL;
 namespace PBL3.Views.CommonForm
 {
     public partial class MainPageForm : Form
