@@ -10,6 +10,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.BLL;
 
 namespace PBL3.Views.RenterForm
 {
@@ -19,7 +20,7 @@ namespace PBL3.Views.RenterForm
         public RenterMainPage()
         {
             InitializeComponent();
-            hideSubmenu();
+            panelInfomationSubmenu.Visible = false;
         }
 
         private void OpenChildForm(Form form)
@@ -105,6 +106,14 @@ namespace PBL3.Views.RenterForm
         private void signOutBtn_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+            //Reset lại loginInfo
+            LoginInfo.UserID = -1;
+
+            //Hiển thị lại form main page
+            this.Hide();
+            MainPageForm form = new MainPageForm();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

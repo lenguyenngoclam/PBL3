@@ -179,6 +179,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\AccountBLL.cs" />
+    <Compile Include="BLL\AddressBLL.cs" />
+    <Compile Include="BLL\LoginInfo.cs" />
+    <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="BLL\WardBLL.cs" />
     <Compile Include="DAL\CreateDB.cs" />
     <Compile Include="DAL\MyData.cs" />
     <Compile Include="DTO\Account.cs" />

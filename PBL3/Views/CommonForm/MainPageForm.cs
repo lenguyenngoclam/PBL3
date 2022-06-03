@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.BLL;
 
 namespace PBL3.Views.CommonForm
 {
@@ -33,7 +34,8 @@ namespace PBL3.Views.CommonForm
 
         private void signupBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new SignUpForm());
+            SignUpForm form = new SignUpForm();
+            OpenChildForm(form);
         }
 
         private void OpenChildForm(Form form)

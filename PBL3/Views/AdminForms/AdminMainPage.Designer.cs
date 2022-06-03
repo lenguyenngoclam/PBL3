@@ -120,6 +120,7 @@ namespace PBL3.Views.AdminForms
             this.signOutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.signOutBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.signOutBtn.UseVisualStyleBackColor = false;
+            this.signOutBtn.Click += new System.EventHandler(this.signOutBtn_Click);
             // 
             // MessageBtn
             // 

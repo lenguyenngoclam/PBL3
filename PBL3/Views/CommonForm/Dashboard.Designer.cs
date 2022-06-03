@@ -39,15 +39,19 @@ namespace PBL3.Views.CommonForm
             this.houseInfoComponent2 = new PBL3.Views.CustomComponents.HouseInfoComponent();
             this.houseInfoComponent1 = new PBL3.Views.CustomComponents.HouseInfoComponent();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.searchBtn = new PBL3.Views.CustomComponents.CustomButton();
             this.truongCbb = new PBL3.Views.CustomComponents.CustomComboBox();
             this.dienTichCbb = new PBL3.Views.CustomComponents.CustomComboBox();
             this.giaCbb = new PBL3.Views.CustomComponents.CustomComboBox();
             this.quanCbb = new PBL3.Views.CustomComponents.CustomComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.houseInfoComponent6 = new PBL3.Views.CustomComponents.HouseInfoComponent();
+            this.houseInfoComponent7 = new PBL3.Views.CustomComponents.HouseInfoComponent();
+            this.houseInfoComponent8 = new PBL3.Views.CustomComponents.HouseInfoComponent();
+            this.houseInfoComponent9 = new PBL3.Views.CustomComponents.HouseInfoComponent();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -109,6 +113,10 @@ namespace PBL3.Views.CommonForm
             this.panel2.AutoScroll = true;
             this.panel2.BackgroundImage = global::PBL3.Properties.Resources.loginBackgroundImage;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.houseInfoComponent9);
+            this.panel2.Controls.Add(this.houseInfoComponent8);
+            this.panel2.Controls.Add(this.houseInfoComponent7);
+            this.panel2.Controls.Add(this.houseInfoComponent6);
             this.panel2.Controls.Add(this.houseInfoComponent5);
             this.panel2.Controls.Add(this.houseInfoComponent4);
             this.panel2.Controls.Add(this.houseInfoComponent3);
@@ -208,6 +216,50 @@ namespace PBL3.Views.CommonForm
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1490, 266);
             this.panel3.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(702, 146);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(204, 26);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Duyệt theo diện tích";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(142, 146);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(260, 26);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Duyệt theo trường đại học";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(702, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(193, 26);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Duyệt theo giá tiền";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(142, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(219, 26);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Duyệt theo thành phố";
             // 
             // searchBtn
             // 
@@ -320,49 +372,61 @@ namespace PBL3.Views.CommonForm
             this.quanCbb.TabIndex = 0;
             this.quanCbb.Texts = "";
             // 
-            // label1
+            // houseInfoComponent6
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(142, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 26);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Duyệt theo thành phố";
+            this.houseInfoComponent6.AddressLabel = "Địa chỉ";
+            this.houseInfoComponent6.AreaLabel = "Mét vuông";
+            this.houseInfoComponent6.DescLabel = "Miêu tả";
+            this.houseInfoComponent6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.houseInfoComponent6.HomeLink = "Tên nhà";
+            this.houseInfoComponent6.Location = new System.Drawing.Point(0, 2736);
+            this.houseInfoComponent6.MoneyLabel = "Số tiền";
+            this.houseInfoComponent6.Name = "houseInfoComponent6";
+            this.houseInfoComponent6.PictureBox = null;
+            this.houseInfoComponent6.Size = new System.Drawing.Size(1490, 494);
+            this.houseInfoComponent6.TabIndex = 6;
             // 
-            // label2
+            // houseInfoComponent7
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(702, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 26);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Duyệt theo giá tiền";
+            this.houseInfoComponent7.AddressLabel = "Địa chỉ";
+            this.houseInfoComponent7.AreaLabel = "Mét vuông";
+            this.houseInfoComponent7.DescLabel = "Miêu tả";
+            this.houseInfoComponent7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.houseInfoComponent7.HomeLink = "Tên nhà";
+            this.houseInfoComponent7.Location = new System.Drawing.Point(0, 3230);
+            this.houseInfoComponent7.MoneyLabel = "Số tiền";
+            this.houseInfoComponent7.Name = "houseInfoComponent7";
+            this.houseInfoComponent7.PictureBox = null;
+            this.houseInfoComponent7.Size = new System.Drawing.Size(1490, 494);
+            this.houseInfoComponent7.TabIndex = 7;
             // 
-            // label3
+            // houseInfoComponent8
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(142, 146);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(260, 26);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Duyệt theo trường đại học";
+            this.houseInfoComponent8.AddressLabel = "Địa chỉ";
+            this.houseInfoComponent8.AreaLabel = "Mét vuông";
+            this.houseInfoComponent8.DescLabel = "Miêu tả";
+            this.houseInfoComponent8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.houseInfoComponent8.HomeLink = "Tên nhà";
+            this.houseInfoComponent8.Location = new System.Drawing.Point(0, 3724);
+            this.houseInfoComponent8.MoneyLabel = "Số tiền";
+            this.houseInfoComponent8.Name = "houseInfoComponent8";
+            this.houseInfoComponent8.PictureBox = null;
+            this.houseInfoComponent8.Size = new System.Drawing.Size(1490, 494);
+            this.houseInfoComponent8.TabIndex = 8;
             // 
-            // label4
+            // houseInfoComponent9
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(702, 146);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(204, 26);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Duyệt theo diện tích";
+            this.houseInfoComponent9.AddressLabel = "Địa chỉ";
+            this.houseInfoComponent9.AreaLabel = "Mét vuông";
+            this.houseInfoComponent9.DescLabel = "Miêu tả";
+            this.houseInfoComponent9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.houseInfoComponent9.HomeLink = "Tên nhà";
+            this.houseInfoComponent9.Location = new System.Drawing.Point(0, 4218);
+            this.houseInfoComponent9.MoneyLabel = "Số tiền";
+            this.houseInfoComponent9.Name = "houseInfoComponent9";
+            this.houseInfoComponent9.PictureBox = null;
+            this.houseInfoComponent9.Size = new System.Drawing.Size(1490, 494);
+            this.houseInfoComponent9.TabIndex = 9;
             // 
             // Dashboard
             // 
@@ -404,5 +468,9 @@ namespace PBL3.Views.CommonForm
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private CustomComponents.HouseInfoComponent houseInfoComponent9;
+        private CustomComponents.HouseInfoComponent houseInfoComponent8;
+        private CustomComponents.HouseInfoComponent houseInfoComponent7;
+        private CustomComponents.HouseInfoComponent houseInfoComponent6;
     }
 }
