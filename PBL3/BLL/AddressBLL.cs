@@ -25,5 +25,21 @@ namespace PBL3.BLL
                 return address.AddressID;
             }
         }
+        public static string GetFullAddressFormat(int? addressID)
+        {
+            if (addressID == null)
+                return "";
+            using (var context = new MyData())
+            {
+                var address = context.Addresses.Where(addr => addr.AddressID == addressID).FirstOrDefault();
+                if (address != null)
+                {
+                    return $"Địa chỉ cụ thể : {address.DetailAddress}," +
+                        $" {WardBLL.GetFullAddressFormat(address.WardID)}";
+                }
+                else
+                    return "";
+            }
+        }
     }
 }

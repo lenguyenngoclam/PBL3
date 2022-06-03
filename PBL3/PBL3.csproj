@@ -185,7 +185,10 @@
   <ItemGroup>
     <Compile Include="BLL\AccountBLL.cs" />
     <Compile Include="BLL\AddressBLL.cs" />
+    <Compile Include="BLL\DistrictBLL.cs" />
+    <Compile Include="BLL\ImageBLL.cs" />
     <Compile Include="BLL\LoginInfo.cs" />
+    <Compile Include="BLL\PostBLL.cs" />
     <Compile Include="BLL\UserBLL.cs" />
     <Compile Include="BLL\WardBLL.cs" />
     <Compile Include="DAL\CreateDB.cs" />
@@ -200,6 +203,7 @@
     <Compile Include="DTO\Role.cs" />
     <Compile Include="DTO\University.cs" />
     <Compile Include="DTO\User.cs" />
+    <Compile Include="DTO\ViewDTO\PostViewDTO.cs" />
     <Compile Include="DTO\Ward.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
