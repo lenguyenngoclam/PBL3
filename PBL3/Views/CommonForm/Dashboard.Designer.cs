@@ -43,19 +43,12 @@ namespace PBL3.Views.CommonForm
             this.dienTichCbb = new PBL3.Views.CustomComponents.CustomComboBox();
             this.giaCbb = new PBL3.Views.CustomComponents.CustomComboBox();
             this.quanCbb = new PBL3.Views.CustomComponents.CustomComboBox();
-<<<<<<< HEAD
             this.customComboBox_phuong = new PBL3.Views.CustomComponents.CustomComboBox();
             this.houseInfoComponent1 = new PBL3.Views.CustomComponents.HouseInfoComponent();
             this.houseInfoComponent2 = new PBL3.Views.CustomComponents.HouseInfoComponent();
             this.houseInfoComponent3 = new PBL3.Views.CustomComponents.HouseInfoComponent();
             this.houseInfoComponent4 = new PBL3.Views.CustomComponents.HouseInfoComponent();
             this.houseInfoComponent5 = new PBL3.Views.CustomComponents.HouseInfoComponent();
-=======
-            this.houseInfoComponent6 = new PBL3.Views.CustomComponents.HouseInfoComponent();
-            this.houseInfoComponent7 = new PBL3.Views.CustomComponents.HouseInfoComponent();
-            this.houseInfoComponent8 = new PBL3.Views.CustomComponents.HouseInfoComponent();
-            this.houseInfoComponent9 = new PBL3.Views.CustomComponents.HouseInfoComponent();
->>>>>>> master
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -120,10 +113,6 @@ namespace PBL3.Views.CommonForm
             this.panel2.AutoScroll = true;
             this.panel2.BackgroundImage = global::PBL3.Properties.Resources.loginBackgroundImage;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.houseInfoComponent9);
-            this.panel2.Controls.Add(this.houseInfoComponent8);
-            this.panel2.Controls.Add(this.houseInfoComponent7);
-            this.panel2.Controls.Add(this.houseInfoComponent6);
             this.panel2.Controls.Add(this.houseInfoComponent5);
             this.panel2.Controls.Add(this.houseInfoComponent4);
             this.panel2.Controls.Add(this.houseInfoComponent3);
@@ -316,7 +305,6 @@ namespace PBL3.Views.CommonForm
             this.quanCbb.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quanCbb.Size = new System.Drawing.Size(232, 33);
             this.quanCbb.TabIndex = 0;
-<<<<<<< HEAD
             this.quanCbb.Texts = "Quận";
             // 
             // customComboBox_phuong
@@ -418,65 +406,6 @@ namespace PBL3.Views.CommonForm
             this.houseInfoComponent5.PictureBox = null;
             this.houseInfoComponent5.Size = new System.Drawing.Size(1415, 316);
             this.houseInfoComponent5.TabIndex = 6;
-=======
-            this.quanCbb.Texts = "";
-            // 
-            // houseInfoComponent6
-            // 
-            this.houseInfoComponent6.AddressLabel = "Địa chỉ";
-            this.houseInfoComponent6.AreaLabel = "Mét vuông";
-            this.houseInfoComponent6.DescLabel = "Miêu tả";
-            this.houseInfoComponent6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.houseInfoComponent6.HomeLink = "Tên nhà";
-            this.houseInfoComponent6.Location = new System.Drawing.Point(0, 2736);
-            this.houseInfoComponent6.MoneyLabel = "Số tiền";
-            this.houseInfoComponent6.Name = "houseInfoComponent6";
-            this.houseInfoComponent6.PictureBox = null;
-            this.houseInfoComponent6.Size = new System.Drawing.Size(1490, 494);
-            this.houseInfoComponent6.TabIndex = 6;
-            // 
-            // houseInfoComponent7
-            // 
-            this.houseInfoComponent7.AddressLabel = "Địa chỉ";
-            this.houseInfoComponent7.AreaLabel = "Mét vuông";
-            this.houseInfoComponent7.DescLabel = "Miêu tả";
-            this.houseInfoComponent7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.houseInfoComponent7.HomeLink = "Tên nhà";
-            this.houseInfoComponent7.Location = new System.Drawing.Point(0, 3230);
-            this.houseInfoComponent7.MoneyLabel = "Số tiền";
-            this.houseInfoComponent7.Name = "houseInfoComponent7";
-            this.houseInfoComponent7.PictureBox = null;
-            this.houseInfoComponent7.Size = new System.Drawing.Size(1490, 494);
-            this.houseInfoComponent7.TabIndex = 7;
-            // 
-            // houseInfoComponent8
-            // 
-            this.houseInfoComponent8.AddressLabel = "Địa chỉ";
-            this.houseInfoComponent8.AreaLabel = "Mét vuông";
-            this.houseInfoComponent8.DescLabel = "Miêu tả";
-            this.houseInfoComponent8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.houseInfoComponent8.HomeLink = "Tên nhà";
-            this.houseInfoComponent8.Location = new System.Drawing.Point(0, 3724);
-            this.houseInfoComponent8.MoneyLabel = "Số tiền";
-            this.houseInfoComponent8.Name = "houseInfoComponent8";
-            this.houseInfoComponent8.PictureBox = null;
-            this.houseInfoComponent8.Size = new System.Drawing.Size(1490, 494);
-            this.houseInfoComponent8.TabIndex = 8;
-            // 
-            // houseInfoComponent9
-            // 
-            this.houseInfoComponent9.AddressLabel = "Địa chỉ";
-            this.houseInfoComponent9.AreaLabel = "Mét vuông";
-            this.houseInfoComponent9.DescLabel = "Miêu tả";
-            this.houseInfoComponent9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.houseInfoComponent9.HomeLink = "Tên nhà";
-            this.houseInfoComponent9.Location = new System.Drawing.Point(0, 4218);
-            this.houseInfoComponent9.MoneyLabel = "Số tiền";
-            this.houseInfoComponent9.Name = "houseInfoComponent9";
-            this.houseInfoComponent9.PictureBox = null;
-            this.houseInfoComponent9.Size = new System.Drawing.Size(1490, 494);
-            this.houseInfoComponent9.TabIndex = 9;
->>>>>>> master
             // 
             // Dashboard
             // 
@@ -509,22 +438,15 @@ namespace PBL3.Views.CommonForm
         private CustomComponents.CustomComboBox dienTichCbb;
         private CustomComponents.CustomComboBox giaCbb;
         private CustomComponents.CustomButton searchBtn;
-<<<<<<< HEAD
         private CustomComponents.CustomComboBox customComboBox_phuong;
         private CustomComponents.HouseInfoComponent houseInfoComponent5;
         private CustomComponents.HouseInfoComponent houseInfoComponent4;
         private CustomComponents.HouseInfoComponent houseInfoComponent3;
         private CustomComponents.HouseInfoComponent houseInfoComponent2;
         private CustomComponents.HouseInfoComponent houseInfoComponent1;
-=======
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private CustomComponents.HouseInfoComponent houseInfoComponent9;
-        private CustomComponents.HouseInfoComponent houseInfoComponent8;
-        private CustomComponents.HouseInfoComponent houseInfoComponent7;
-        private CustomComponents.HouseInfoComponent houseInfoComponent6;
->>>>>>> master
     }
 }

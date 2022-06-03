@@ -25,5 +25,19 @@ namespace PBL3.BLL
                 return context.Wards.Where(ward => ward.WardName == wardName).FirstOrDefault().WardID;
             }
         }
+        public static string GetFullAddressFormat(int wardID)
+        {
+            using (var context = new MyData())
+            {
+                var ward = context.Wards.Where(w => w.WardID == wardID).FirstOrDefault();
+                if (ward != null)
+                {
+                    string districtName = DistrictBLL.GetDistrictNameByID(ward.WardID);
+                    return $"Phường : {ward.WardName}, Đường : {districtName}";
+                }
+                else
+                    return "";
+            }
+        }
     }
 }

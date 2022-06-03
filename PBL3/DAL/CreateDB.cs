@@ -88,17 +88,26 @@ namespace PBL3.DAL
                             Price = 1000000, Square = 10.5f, BeingPosted = false, BeingRented = false,
                             CreatedAt = DateTime.Now, PublishedAt = null, ModifiedAt = null
                 },
-
+                new Post {PostID = 3, UserID = 2, AddressID = 2, Title = "Cho thuê trọ tại ĐH NN DN", Description = "Trọ bao đẹp",
+                            Price = 10320000, Square = 10.5f, BeingPosted = false, BeingRented = false,
+                            CreatedAt = DateTime.Now, PublishedAt = null, ModifiedAt = null
+                },
+                new Post {PostID = 4, UserID = 1, AddressID = 2, Title = "Cho thuê trọ tại ĐH VN-UK", Description = "Trọ bao đẹp",
+                            Price = 10320000, Square = 10.5f, BeingPosted = false, BeingRented = false,
+                            CreatedAt = DateTime.Now, PublishedAt = null, ModifiedAt = null
+                },
+                new Post {PostID = 5, UserID = 3, AddressID = 2, Title = "Cho thuê trọ tại ĐH BK HN", Description = "Trọ bao đẹp",
+                            Price = 10320000, Square = 10.5f, BeingPosted = false, BeingRented = false,
+                            CreatedAt = DateTime.Now, PublishedAt = null, ModifiedAt = null
+                },
             });
 
             context.Images.AddRange(new Image[]
             {
-                new Image {ImageID = 1, PostID = 1 , ImagePath = "a"},
-                new Image {ImageID = 2, PostID = 1 , ImagePath = "a"},
-                new Image {ImageID = 3, PostID = 2 , ImagePath = "a"},
-                new Image {ImageID = 4, PostID = 2 , ImagePath = "a"},
+                new Image {ImageID = 1, PostID = 1 , ImagePath = @"\phongtro1.jpg"},
 
             });
+
             context.Comments.AddRange(new Comment[]
             {
                 new Comment {CommentID = 1, PostID =1, UserID = 2, Content = "Haha", CreatedAt = DateTime.Now},
@@ -107,11 +116,12 @@ namespace PBL3.DAL
                 new Comment {CommentID = 4, PostID =2, UserID = 3, Content = "Huhu", CreatedAt = DateTime.Now},
 
             });
+
             context.Ratings.AddRange(new Rating[]
             {
                 new Rating {RatingID = 1, PostID = 1, UserID = 3, Star = 5, CreatedAt = DateTime.Now},
-                new Rating {RatingID = 2, PostID = 1, UserID = 3, Star = 2, CreatedAt = DateTime.Now},
-                new Rating {RatingID = 3, PostID = 2, UserID = 3, Star = 2, CreatedAt = DateTime.Now},
+                new Rating {RatingID = 2, PostID = 1, UserID = 2, Star = 2, CreatedAt = DateTime.Now},
+                new Rating {RatingID = 3, PostID = 2, UserID = 2, Star = 2, CreatedAt = DateTime.Now},
                 new Rating {RatingID = 4, PostID = 2, UserID = 3, Star = 5, CreatedAt = DateTime.Now},
 
             });
