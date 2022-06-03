@@ -15,7 +15,7 @@ namespace PBL3.DTO
         [Required]
         public int PostID { get; set; }
 
-        //[Required]
+        [Required]
         public int? UserID { get; set; } //khóa ngoại có thể null -> tránh circular except
         [ForeignKey("UserID")]
         public virtual User User { get; set; }

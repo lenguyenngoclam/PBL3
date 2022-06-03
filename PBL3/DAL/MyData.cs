@@ -36,9 +36,4 @@ namespace PBL3.DAL
         public virtual DbSet<Address> Addresses { get; set; }
     }
 
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
 }

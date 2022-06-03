@@ -8,6 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.BLL;
 using PBL3.Views.CommonForm;
 
 namespace PBL3.Views.CustomerForm
@@ -87,6 +88,14 @@ namespace PBL3.Views.CustomerForm
         private void signOutBtn_Click(object sender, EventArgs e)
         {
             hideSubmenu();
+            //Reset lại loginInfo
+            LoginInfo.UserID = -1;
+
+            //Hiển thị lại form main page
+            this.Hide();
+            MainPageForm form = new MainPageForm();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void idBtn_Click(object sender, EventArgs e)
@@ -108,5 +117,6 @@ namespace PBL3.Views.CustomerForm
         {
             OpenChildForm(new ChangePhoneNumberForm());
         }
+
     }
 }

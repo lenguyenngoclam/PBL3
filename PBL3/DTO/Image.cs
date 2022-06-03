@@ -18,7 +18,7 @@ namespace PBL3.DTO
         [Required]
         public string ImagePath { get; set; }
 
-        [Required]
+        [Required]  
         public int PostID { get; set; }
         [ForeignKey("PostID")]
         public virtual Post Post { get; set; }

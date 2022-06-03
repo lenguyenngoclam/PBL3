@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL3.Views.CommonForm;
+using PBL3.BLL;
 
 namespace PBL3.Views.AdminForms
 {
@@ -51,6 +52,18 @@ namespace PBL3.Views.AdminForms
         {
             AdminChatBox form = new AdminChatBox();
             OpenChildForm(form);
+        }
+
+        private void signOutBtn_Click(object sender, EventArgs e)
+        {
+            //Reset lả loginInfo
+            LoginInfo.UserID = -1;
+
+            //Hiển thị lại form main page
+            this.Hide();
+            MainPageForm form = new MainPageForm();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }
