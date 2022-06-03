@@ -33,7 +33,7 @@ namespace PBL3.BLL
                 if (ward != null)
                 {
                     string districtName = DistrictBLL.GetDistrictNameByID(ward.WardID);
-                    return $"Phường : {ward.WardName}, Đường : {districtName}";
+                    return $"Phường : {ward.WardName}\nĐường : {districtName}";
                 }
                 else
                     return "";

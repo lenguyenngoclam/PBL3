@@ -34,7 +34,7 @@ namespace PBL3.BLL
                 var address = context.Addresses.Where(addr => addr.AddressID == addressID).FirstOrDefault();
                 if (address != null)
                 {
-                    return $"Địa chỉ cụ thể : {address.DetailAddress}," +
+                    return $"Địa chỉ cụ thể : {address.DetailAddress} \n" +
                         $" {WardBLL.GetFullAddressFormat(address.WardID)}";
                 }
                 else

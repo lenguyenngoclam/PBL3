@@ -34,5 +34,15 @@ namespace PBL3.BLL
                 context.SaveChanges();
             }
         }
+        
+        public static User GetUserByID(int? userID)
+        {
+            if (userID == null)
+                return null;
+            using (var context = new MyData())
+            {
+                return context.Users.Where(u => u.UserID == userID).FirstOrDefault();
+            }
+        }
     }
 }
