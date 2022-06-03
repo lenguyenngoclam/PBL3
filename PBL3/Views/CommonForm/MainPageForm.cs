@@ -7,8 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
+using PBL3.DAL;
+=======
 using PBL3.BLL;
 
+>>>>>>> master
 namespace PBL3.Views.CommonForm
 {
     public partial class MainPageForm : Form

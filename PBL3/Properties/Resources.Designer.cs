@@ -63,6 +63,26 @@ namespace PBL3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bgr2 {
+            get {
+                object obj = ResourceManager.GetObject("bgr2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgrfn {
+            get {
+                object obj = ResourceManager.GetObject("bgrfn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendarDark {
             get {
                 object obj = ResourceManager.GetObject("calendarDark", resourceCulture);
@@ -76,6 +96,26 @@ namespace PBL3.Properties {
         internal static System.Drawing.Bitmap calendarWhite {
             get {
                 object obj = ResourceManager.GetObject("calendarWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_customer_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-customer-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_system_administrator_male_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-system-administrator-male-96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +176,46 @@ namespace PBL3.Properties {
         internal static System.Drawing.Bitmap phongtro1 {
             get {
                 object obj = ResourceManager.GetObject("phongtro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thiết_kế_chưa_có_tên {
+            get {
+                object obj = ResourceManager.GetObject("Thiết kế chưa có tên", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thiết_kế_chưa_có_tên__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Thiết kế chưa có tên (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tìm_trọ__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Tìm trọ (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tìm_trọ__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Tìm trọ (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

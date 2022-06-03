@@ -11,7 +11,8 @@ using System.ComponentModel;
 
 namespace PBL3.Views.CustomComponents
 {
-    class CustomButton : Button
+
+    public class CustomButton : Button
     {
 
         //Fields

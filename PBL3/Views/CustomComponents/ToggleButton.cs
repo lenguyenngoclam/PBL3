@@ -11,7 +11,7 @@ using System.ComponentModel;
 
 namespace PBL3.Views.CustomComponents
 {
-    class ToggleButton : CheckBox
+    public class ToggleButton : CheckBox
     {
         //Fields 
         private Color onBackColor = Color.MediumSlateBlue;

@@ -16,6 +16,5 @@ namespace PBL3.Views.CustomerForm
         {
             InitializeComponent();
         }
-
     }
 }

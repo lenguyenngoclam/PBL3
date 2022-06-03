@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace PBL3.Views.CustomComponents
 {
     [DefaultEvent("OnSelectedIndexChanged")]
-    class CustomComboBox : UserControl
+    public class CustomComboBox : UserControl
     {
         //Fields
         private Color backColor = Color.WhiteSmoke;
