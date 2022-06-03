@@ -47,6 +47,28 @@ namespace PBL3.BLL
             return false;
         }
 
+        public static bool CheckPassword(int accountID, string password)
+        {
+            using(var context = new MyData())
+            {
+                var acc = context.Accounts.Where(account => account.AccountID == accountID).FirstOrDefault();
+                if (acc.Password == password)
+                    return true;
+                else
+                    return false;
+            }
+        }
+
+        public static void ChangePassowrd(int accountID, string newPassword)
+        {
+            using (var context = new MyData())
+            {
+                var acc = context.Accounts.Where(account => account.AccountID == accountID).FirstOrDefault();
+                acc.Password = newPassword;
+                context.SaveChanges();
+            }
+        }
+
         public static void AddAccount(string username, string password, int roleID)
         {
             Account newAccount = new Account()

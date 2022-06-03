@@ -44,5 +44,13 @@ namespace PBL3.BLL
                 return context.Users.Where(u => u.UserID == userID).FirstOrDefault();
             }
         }
+        public static int GetAccountIDByUserID(int userID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Users.Where(user => user.UserID == userID)
+                            .FirstOrDefault().AccountID;
+            }
+        }
     }
 }
