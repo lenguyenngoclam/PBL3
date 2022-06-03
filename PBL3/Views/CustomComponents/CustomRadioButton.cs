@@ -10,7 +10,7 @@ using System.Drawing.Drawing2D;
 
 namespace PBL3.Views.CustomComponents
 {
-    class CustomRadioButton : RadioButton
+    public class CustomRadioButton : RadioButton
     {
         //Fields
         private Color checkedColor = Color.MediumSlateBlue;
