@@ -27,6 +27,7 @@ namespace PBL3.BLL
                 context.Posts.OrderBy(post => post.PostID).Skip(skipNum).Take(postNum)
                     .ToList().ForEach(post => ls.Add(new PostViewDTO()
                     {
+                        PostID = post.PostID,
                         Title = post.Title,
                         Description = post.Description,
                         Area = post.Square,
@@ -39,5 +40,23 @@ namespace PBL3.BLL
             }
         }
 
+        public static PostViewDTO GetPostByID(int postID)
+        {
+           using(var context = new MyData())
+            {
+                var post = context.Posts.Where(p => p.PostID == postID).FirstOrDefault();
+                return new PostViewDTO()
+                {
+                    PostID = post.PostID,
+                    Title = post.Title,
+                    Description = post.Description,
+                    Area = post.Square,
+                    Price = post.Price,
+                    Address = AddressBLL.GetFullAddressFormat(post.AddressID),
+                    UserID = post.UserID,
+                    ImagePaths = ImageBLL.GetImagePaths(post.PostID)
+                };
+            }
+        }
     }
 }

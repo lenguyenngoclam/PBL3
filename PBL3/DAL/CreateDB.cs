@@ -91,21 +91,15 @@ namespace PBL3.DAL
                 new Post {PostID = 3, UserID = 2, AddressID = 2, Title = "Cho thuê trọ tại ĐH NN DN", Description = "Trọ bao đẹp",
                             Price = 10320000, Square = 10.5f, BeingPosted = false, BeingRented = false,
                             CreatedAt = DateTime.Now, PublishedAt = null, ModifiedAt = null
-                },
-                new Post {PostID = 4, UserID = 1, AddressID = 2, Title = "Cho thuê trọ tại ĐH VN-UK", Description = "Trọ bao đẹp",
-                            Price = 10320000, Square = 10.5f, BeingPosted = false, BeingRented = false,
-                            CreatedAt = DateTime.Now, PublishedAt = null, ModifiedAt = null
-                },
-                new Post {PostID = 5, UserID = 3, AddressID = 2, Title = "Cho thuê trọ tại ĐH BK HN", Description = "Trọ bao đẹp",
-                            Price = 10320000, Square = 10.5f, BeingPosted = false, BeingRented = false,
-                            CreatedAt = DateTime.Now, PublishedAt = null, ModifiedAt = null
-                },
+                }
             });
 
             context.Images.AddRange(new Image[]
             {
-                new Image {ImageID = 1, PostID = 1 , ImagePath = @"\phongtro1.jpg"},
-
+                new Image { ImageID = 1, PostID = 3, ImagePath = @"\phongtro1.jpg"},
+                new Image { ImageID = 2, PostID = 1, ImagePath = @"\phongtro1.jpg"},
+                new Image { ImageID = 3, PostID = 3, ImagePath = @"\phongtro2.jpg"},
+                new Image { ImageID = 4, PostID = 3, ImagePath = @"\phongtro3.jpg"},
             });
 
             context.Comments.AddRange(new Comment[]
@@ -114,6 +108,8 @@ namespace PBL3.DAL
                 new Comment {CommentID = 2, PostID =1, UserID = 2, Content = "Hihi", CreatedAt = DateTime.Now},
                 new Comment {CommentID = 3, PostID =2, UserID = 3, Content = "Hehe", CreatedAt = DateTime.Now},
                 new Comment {CommentID = 4, PostID =2, UserID = 3, Content = "Huhu", CreatedAt = DateTime.Now},
+                new Comment {CommentID = 5, PostID =3, UserID = 1, Content = "Huhu", CreatedAt = DateTime.Now},
+                new Comment {CommentID = 6, PostID =3, UserID = 3, Content = "HicHic", CreatedAt = DateTime.Now},
 
             });
 

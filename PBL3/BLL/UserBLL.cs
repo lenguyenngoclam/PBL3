@@ -52,5 +52,21 @@ namespace PBL3.BLL
                             .FirstOrDefault().AccountID;
             }
         }
+        public static string GetContactInformation(int userID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Users.Where(user => user.UserID == userID)
+                            .FirstOrDefault().Phone;
+            }
+        }
+        public static string GetNameInformation(int userID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Users.Where(user => user.UserID == userID)
+                            .FirstOrDefault().FullName;
+            }
+        }
     }
 }

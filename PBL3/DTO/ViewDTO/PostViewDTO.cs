@@ -11,6 +11,7 @@ namespace PBL3.DTO.ViewDTO
         public string Title { get; set; }
         public string Address { get; set; }
         public int? UserID { get; set; }
+        public int PostID { get; set; }
         public string Description { get; set; }
         public double Area { get; set; }
         public int Price { get; set; }

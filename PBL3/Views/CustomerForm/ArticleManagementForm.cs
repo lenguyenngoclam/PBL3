@@ -20,8 +20,8 @@ namespace PBL3.Views.CustomerForm
 
         private void readBtn_Click(object sender, EventArgs e)
         {
-            HouseInformationForm form = new HouseInformationForm();
-            form.ShowDialog();
+            HouseInformationForm form = new HouseInformationForm(3);
+            form.Show();
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
@@ -35,5 +35,6 @@ namespace PBL3.Views.CustomerForm
             ArticlePostingForm form = new ArticlePostingForm();
             form.ShowDialog();
         }
+
     }
 }

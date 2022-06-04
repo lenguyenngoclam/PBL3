@@ -27,13 +27,13 @@ namespace PBL3.BLL
         }
 
         //Lấy đường dẫn của thư mục lưu trữ ảnh của người dùng có UserID
-        public static string GetImageStoragePathsOfUser(int? userID)
+        public static string GetImageStoragePathsOfPost(int? postID)
         {
-            if (userID == null)
+            if (postID == null)
                 return "";
             string path = Path.GetDirectoryName(Application.ExecutablePath);
             string appPath = Path.GetFullPath(Path.Combine(path, @"..\..\")) 
-                + @"Resources\User" + userID.ToString();
+                + @"Resources\Post" + postID.ToString();
             return appPath;
         }
     }

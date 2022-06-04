@@ -18,23 +18,26 @@ namespace PBL3.Views.CommonForm
     {
         private int currentPage = 0;
         private int totalPage;
+        private int numberOfPosts;
         private int skipNum = 5;
-        private int postNum = 5;
+        private int postNum;
         public Dashboard()
         {
             InitializeComponent();
-            totalPage = (int)Math.Ceiling(PostBLL.GetToTalNumberOfPosts() / Convert.ToDouble(postNum));
+            numberOfPosts = PostBLL.GetToTalNumberOfPosts();
+            postNum = (numberOfPosts - currentPage * 5 < 5) ? numberOfPosts - currentPage * 5 : 5; 
+            totalPage = (int)Math.Ceiling(PostBLL.GetToTalNumberOfPosts() / Convert.ToDouble(skipNum));
             ShowPosts();
         }
 
         private void ShowPosts()
         {
+            postNum = (numberOfPosts - currentPage * 5 < 5) ? numberOfPosts - currentPage * 5 : 5;
             DisplayHouseInformation();
             List<PostViewDTO> postView = PostBLL.GetPosts(currentPage * skipNum, postNum);
-            if(currentPage == totalPage)
-            {
-                DisablePostViewWhenNotFount(PostBLL.GetToTalNumberOfPosts() - ((currentPage - 1) * postNum));
-            }
+
+            //When number of post < 5
+            DisablePostViewWhenNotFount(postNum);
 
             string imagePath;
             if (houseInfoComponent1.Visible)
@@ -45,7 +48,7 @@ namespace PBL3.Views.CommonForm
                 houseInfoComponent1.MoneyLabel += postView[0].Price;
                 houseInfoComponent1.AreaLabel += postView[0].Area;
 
-                imagePath = ImageBLL.GetImageStoragePathsOfUser(postView[0].UserID);
+                imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[0].PostID);
                 if (!Directory.Exists(imagePath))
                     Directory.CreateDirectory(imagePath);
                 if(postView[0].ImagePaths.Count > 0)
@@ -61,7 +64,7 @@ namespace PBL3.Views.CommonForm
                 houseInfoComponent2.MoneyLabel += postView[1].Price;
                 houseInfoComponent2.AreaLabel += postView[1].Area;
 
-                imagePath = ImageBLL.GetImageStoragePathsOfUser(postView[1].UserID);
+                imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[1].PostID);
                 if (!Directory.Exists(imagePath))
                     Directory.CreateDirectory(imagePath);
                 if (postView[1].ImagePaths.Count > 0)
@@ -77,7 +80,7 @@ namespace PBL3.Views.CommonForm
                 houseInfoComponent3.MoneyLabel += postView[2].Price;
                 houseInfoComponent3.AreaLabel += postView[2].Area;
 
-                imagePath = ImageBLL.GetImageStoragePathsOfUser(postView[2].UserID);
+                imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[2].PostID);
                 if (!Directory.Exists(imagePath))
                     Directory.CreateDirectory(imagePath);
                 if (postView[2].ImagePaths.Count > 0)
@@ -93,7 +96,7 @@ namespace PBL3.Views.CommonForm
                 houseInfoComponent4.MoneyLabel += postView[3].Price;
                 houseInfoComponent4.AreaLabel += postView[3].Area;
 
-                imagePath = ImageBLL.GetImageStoragePathsOfUser(postView[3].UserID);
+                imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[3].PostID);
                 if (!Directory.Exists(imagePath))
                     Directory.CreateDirectory(imagePath);
                 if (postView[3].ImagePaths.Count > 0)
@@ -109,7 +112,7 @@ namespace PBL3.Views.CommonForm
                 houseInfoComponent5.MoneyLabel += postView[4].Price;
                 houseInfoComponent5.AreaLabel += postView[4].Area;
 
-                imagePath = ImageBLL.GetImageStoragePathsOfUser(postView[4].UserID);
+                imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[4].PostID);
                 if (!Directory.Exists(imagePath))
                     Directory.CreateDirectory(imagePath);
                 if (postView[4].ImagePaths.Count > 0)
@@ -151,6 +154,22 @@ namespace PBL3.Views.CommonForm
             houseInfoComponent3.Visible = true;
             houseInfoComponent4.Visible = true;
             houseInfoComponent5.Visible = true;
+        }
+
+        private void prevPageBtn_Click(object sender, EventArgs e)
+        {
+            currentPage = currentPage - 1;
+            if (currentPage < 0)
+                currentPage = totalPage - 1;
+            ShowPosts();
+        }
+
+        private void nextPageBtn_Click(object sender, EventArgs e)
+        {
+            currentPage = currentPage + 1;
+            if (currentPage == totalPage)
+                currentPage = 0;
+            ShowPosts();
         }
     }
 }

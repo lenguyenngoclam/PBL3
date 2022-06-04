@@ -20,7 +20,7 @@ namespace PBL3.Views.AdminForms
 
         private void readBtn_Click(object sender, EventArgs e)
         {
-            HouseInformationForm form = new HouseInformationForm();
+            HouseInformationForm form = new HouseInformationForm(2);
             form.ShowDialog();
         }
     }

@@ -28,10 +28,10 @@ namespace PBL3.Views.CustomComponents
 
         public string Comment
         {
-            get => cmtLabel.Text;
+            get => textBox1.Text;
             set
             {
-                cmtLabel.Text = value;
+                textBox1.Text = value;
                 this.Invalidate();
             }
         }
