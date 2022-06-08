@@ -36,5 +36,19 @@ namespace PBL3.BLL
                 + @"Resources\Post" + postID.ToString();
             return appPath;
         }
+
+        public static void AddImage(string imagePath, int postID)
+        {
+            using (var context = new MyData())
+            {
+                Image image = new Image()
+                {
+                    ImagePath = imagePath,
+                    PostID = postID
+                };
+                context.Images.Add(image);
+                context.SaveChanges();
+            }
+        }
     }
 }

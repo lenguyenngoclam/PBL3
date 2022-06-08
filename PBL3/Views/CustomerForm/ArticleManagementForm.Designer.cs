@@ -96,6 +96,7 @@ namespace PBL3.Views.CustomerForm
             this.uploadBtn.Text = "Đăng bài";
             this.uploadBtn.TextColor = System.Drawing.Color.White;
             this.uploadBtn.UseVisualStyleBackColor = false;
+            this.uploadBtn.Click += new System.EventHandler(this.uploadBtn_Click);
             // 
             // updateBtn
             // 
@@ -188,7 +189,7 @@ namespace PBL3.Views.CustomerForm
             this.trangThaiThueCbb.Location = new System.Drawing.Point(489, 17);
             this.trangThaiThueCbb.MinimumSize = new System.Drawing.Size(300, 52);
             this.trangThaiThueCbb.Name = "trangThaiThueCbb";
-            this.trangThaiThueCbb.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.trangThaiThueCbb.Padding = new System.Windows.Forms.Padding(3);
             this.trangThaiThueCbb.Size = new System.Drawing.Size(300, 52);
             this.trangThaiThueCbb.TabIndex = 11;
             this.trangThaiThueCbb.Texts = "";

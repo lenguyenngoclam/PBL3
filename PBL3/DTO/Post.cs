@@ -36,7 +36,7 @@ namespace PBL3.DTO
         public int Price { get; set; }
 
         [Required]
-        public float Square { get; set; }
+        public double Square { get; set; }
 
         [Required]
         public bool BeingPosted { get; set; } //default false

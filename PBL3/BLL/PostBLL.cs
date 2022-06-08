@@ -58,5 +58,27 @@ namespace PBL3.BLL
                 };
             }
         }
+
+        public static int AddPost(int userID, int addressID, string title, string description, int price, double area)
+        {
+            using (var context = new MyData())
+            {
+                Post post = new Post()
+                {
+                    UserID = userID,
+                    AddressID = addressID,
+                    Title = title,
+                    Description = description,
+                    Price = price,
+                    Square = area,
+                    BeingPosted = false,
+                    BeingRented = false,
+                    CreatedAt = DateTime.Now
+                };
+                context.Posts.Add(post);
+                context.SaveChanges();
+                return post.PostID;
+            }
+        }
     }
 }

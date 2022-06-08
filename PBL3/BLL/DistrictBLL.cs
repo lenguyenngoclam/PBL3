@@ -18,5 +18,13 @@ namespace PBL3.BLL
                     .FirstOrDefault().DistrictName;
             }
         }
+
+        public static List<District> GetAllDistricts()
+        {
+            using (var context = new MyData())
+            {
+                return context.Districts.ToList();
+            }
+        }
     }
 }
