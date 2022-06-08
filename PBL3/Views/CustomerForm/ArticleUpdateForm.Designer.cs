@@ -37,26 +37,26 @@ namespace PBL3.Views.CustomerForm
             this.discardBtn = new PBL3.Views.CustomComponents.CustomButton();
             this.updateBtn = new PBL3.Views.CustomComponents.CustomButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.descTextbox = new System.Windows.Forms.TextBox();
+            this.areaTextbox = new System.Windows.Forms.TextBox();
+            this.priceTextbox = new System.Windows.Forms.TextBox();
+            this.titleTextbox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.changeImgBtn = new PBL3.Views.CustomComponents.CustomButton();
-            this.customTextBox2 = new PBL3.Views.CustomComponents.CustomTextBox();
-            this.customTextBox1 = new PBL3.Views.CustomComponents.CustomTextBox();
-            this.usernameTextbox = new PBL3.Views.CustomComponents.CustomTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.diaChiGroupBox = new System.Windows.Forms.GroupBox();
-            this.soNhaTextBox = new PBL3.Views.CustomComponents.CustomTextBox();
-            this.duongComboBox = new PBL3.Views.CustomComponents.CustomComboBox();
+            this.soNhaTextBox = new System.Windows.Forms.TextBox();
             this.phuongComboBox = new PBL3.Views.CustomComponents.CustomComboBox();
             this.quanComboBox = new PBL3.Views.CustomComponents.CustomComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.customPanel2 = new PBL3.Views.CustomComponents.CustomPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -96,7 +96,7 @@ namespace PBL3.Views.CustomerForm
             this.customPanel1.GradientTopColor = System.Drawing.Color.Azure;
             this.customPanel1.Location = new System.Drawing.Point(55, 37);
             this.customPanel1.Name = "customPanel1";
-            this.customPanel1.Size = new System.Drawing.Size(1627, 1532);
+            this.customPanel1.Size = new System.Drawing.Size(1627, 1584);
             this.customPanel1.TabIndex = 0;
             // 
             // panel2
@@ -105,7 +105,7 @@ namespace PBL3.Views.CustomerForm
             this.panel2.Controls.Add(this.discardBtn);
             this.panel2.Controls.Add(this.updateBtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1438);
+            this.panel2.Location = new System.Drawing.Point(0, 1490);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1627, 94);
             this.panel2.TabIndex = 5;
@@ -156,21 +156,69 @@ namespace PBL3.Views.CustomerForm
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.descTextbox);
+            this.groupBox1.Controls.Add(this.areaTextbox);
+            this.groupBox1.Controls.Add(this.priceTextbox);
+            this.groupBox1.Controls.Add(this.titleTextbox);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.customTextBox2);
-            this.groupBox1.Controls.Add(this.customTextBox1);
-            this.groupBox1.Controls.Add(this.usernameTextbox);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(38, 511);
+            this.groupBox1.Location = new System.Drawing.Point(38, 496);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1536, 856);
+            this.groupBox1.Size = new System.Drawing.Size(1536, 958);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin mô tả";
+            // 
+            // descTextbox
+            // 
+            this.descTextbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.descTextbox.Location = new System.Drawing.Point(426, 415);
+            this.descTextbox.Multiline = true;
+            this.descTextbox.Name = "descTextbox";
+            this.descTextbox.Size = new System.Drawing.Size(1050, 136);
+            this.descTextbox.TabIndex = 16;
+            // 
+            // areaTextbox
+            // 
+            this.areaTextbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.areaTextbox.Location = new System.Drawing.Point(426, 303);
+            this.areaTextbox.Name = "areaTextbox";
+            this.areaTextbox.Size = new System.Drawing.Size(1050, 44);
+            this.areaTextbox.TabIndex = 15;
+            // 
+            // priceTextbox
+            // 
+            this.priceTextbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.priceTextbox.Location = new System.Drawing.Point(426, 193);
+            this.priceTextbox.Name = "priceTextbox";
+            this.priceTextbox.Size = new System.Drawing.Size(1050, 44);
+            this.priceTextbox.TabIndex = 14;
+            // 
+            // titleTextbox
+            // 
+            this.titleTextbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.titleTextbox.Location = new System.Drawing.Point(426, 89);
+            this.titleTextbox.Name = "titleTextbox";
+            this.titleTextbox.Size = new System.Drawing.Size(1050, 44);
+            this.titleTextbox.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(93, 421);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(124, 31);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Miêu tả : ";
             // 
             // panel1
             // 
@@ -180,7 +228,7 @@ namespace PBL3.Views.CustomerForm
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.changeImgBtn);
-            this.panel1.Location = new System.Drawing.Point(426, 441);
+            this.panel1.Location = new System.Drawing.Point(426, 575);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1059, 344);
             this.panel1.TabIndex = 11;
@@ -242,75 +290,6 @@ namespace PBL3.Views.CustomerForm
             this.changeImgBtn.UseVisualStyleBackColor = false;
             this.changeImgBtn.Click += new System.EventHandler(this.changeImgBtn_Click);
             // 
-            // customTextBox2
-            // 
-            this.customTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox2.BorderColor = System.Drawing.Color.Blue;
-            this.customTextBox2.BorderFocusColor = System.Drawing.Color.DarkOrchid;
-            this.customTextBox2.BorderRadius = 10;
-            this.customTextBox2.BorderSize = 2;
-            this.customTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox2.Location = new System.Drawing.Point(426, 315);
-            this.customTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.customTextBox2.Multiline = false;
-            this.customTextBox2.Name = "customTextBox2";
-            this.customTextBox2.Padding = new System.Windows.Forms.Padding(30, 7, 10, 7);
-            this.customTextBox2.PasswordChar = false;
-            this.customTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox2.PlaceholderText = "Username";
-            this.customTextBox2.Size = new System.Drawing.Size(1059, 45);
-            this.customTextBox2.TabIndex = 10;
-            this.customTextBox2.Texts = "";
-            this.customTextBox2.UnderlinedStyle = false;
-            // 
-            // customTextBox1
-            // 
-            this.customTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.customTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.customTextBox1.BorderColor = System.Drawing.Color.Blue;
-            this.customTextBox1.BorderFocusColor = System.Drawing.Color.DarkOrchid;
-            this.customTextBox1.BorderRadius = 10;
-            this.customTextBox1.BorderSize = 2;
-            this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.customTextBox1.Location = new System.Drawing.Point(426, 205);
-            this.customTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.customTextBox1.Multiline = false;
-            this.customTextBox1.Name = "customTextBox1";
-            this.customTextBox1.Padding = new System.Windows.Forms.Padding(30, 7, 10, 7);
-            this.customTextBox1.PasswordChar = false;
-            this.customTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.customTextBox1.PlaceholderText = "Username";
-            this.customTextBox1.Size = new System.Drawing.Size(1059, 45);
-            this.customTextBox1.TabIndex = 9;
-            this.customTextBox1.Texts = "";
-            this.customTextBox1.UnderlinedStyle = false;
-            // 
-            // usernameTextbox
-            // 
-            this.usernameTextbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.usernameTextbox.BackColor = System.Drawing.SystemColors.Window;
-            this.usernameTextbox.BorderColor = System.Drawing.Color.Blue;
-            this.usernameTextbox.BorderFocusColor = System.Drawing.Color.DarkOrchid;
-            this.usernameTextbox.BorderRadius = 10;
-            this.usernameTextbox.BorderSize = 2;
-            this.usernameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextbox.ForeColor = System.Drawing.Color.DimGray;
-            this.usernameTextbox.Location = new System.Drawing.Point(426, 101);
-            this.usernameTextbox.Margin = new System.Windows.Forms.Padding(4);
-            this.usernameTextbox.Multiline = false;
-            this.usernameTextbox.Name = "usernameTextbox";
-            this.usernameTextbox.Padding = new System.Windows.Forms.Padding(30, 7, 10, 7);
-            this.usernameTextbox.PasswordChar = false;
-            this.usernameTextbox.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.usernameTextbox.PlaceholderText = "Username";
-            this.usernameTextbox.Size = new System.Drawing.Size(1059, 45);
-            this.usernameTextbox.TabIndex = 8;
-            this.usernameTextbox.Texts = "";
-            this.usernameTextbox.UnderlinedStyle = false;
-            // 
             // label9
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -318,7 +297,7 @@ namespace PBL3.Views.CustomerForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(93, 428);
+            this.label9.Location = new System.Drawing.Point(93, 575);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(144, 31);
             this.label9.TabIndex = 6;
@@ -368,15 +347,13 @@ namespace PBL3.Views.CustomerForm
             this.diaChiGroupBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.diaChiGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.diaChiGroupBox.Controls.Add(this.soNhaTextBox);
-            this.diaChiGroupBox.Controls.Add(this.duongComboBox);
             this.diaChiGroupBox.Controls.Add(this.phuongComboBox);
             this.diaChiGroupBox.Controls.Add(this.quanComboBox);
             this.diaChiGroupBox.Controls.Add(this.label5);
             this.diaChiGroupBox.Controls.Add(this.label4);
-            this.diaChiGroupBox.Controls.Add(this.label3);
             this.diaChiGroupBox.Controls.Add(this.label2);
             this.diaChiGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diaChiGroupBox.Location = new System.Drawing.Point(38, 131);
+            this.diaChiGroupBox.Location = new System.Drawing.Point(38, 128);
             this.diaChiGroupBox.Name = "diaChiGroupBox";
             this.diaChiGroupBox.Size = new System.Drawing.Size(1536, 334);
             this.diaChiGroupBox.TabIndex = 3;
@@ -386,45 +363,11 @@ namespace PBL3.Views.CustomerForm
             // soNhaTextBox
             // 
             this.soNhaTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.soNhaTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.soNhaTextBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.soNhaTextBox.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.soNhaTextBox.BorderRadius = 0;
-            this.soNhaTextBox.BorderSize = 2;
-            this.soNhaTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soNhaTextBox.ForeColor = System.Drawing.Color.DimGray;
-            this.soNhaTextBox.Location = new System.Drawing.Point(1131, 193);
-            this.soNhaTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.soNhaTextBox.Multiline = false;
+            this.soNhaTextBox.Location = new System.Drawing.Point(405, 192);
+            this.soNhaTextBox.Multiline = true;
             this.soNhaTextBox.Name = "soNhaTextBox";
-            this.soNhaTextBox.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.soNhaTextBox.PasswordChar = false;
-            this.soNhaTextBox.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.soNhaTextBox.PlaceholderText = "";
-            this.soNhaTextBox.Size = new System.Drawing.Size(354, 45);
-            this.soNhaTextBox.TabIndex = 7;
-            this.soNhaTextBox.Texts = "";
-            this.soNhaTextBox.UnderlinedStyle = false;
-            // 
-            // duongComboBox
-            // 
-            this.duongComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.duongComboBox.BackColor = System.Drawing.Color.White;
-            this.duongComboBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.duongComboBox.BorderSize = 3;
-            this.duongComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.duongComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.duongComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.duongComboBox.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.duongComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.duongComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.duongComboBox.Location = new System.Drawing.Point(1131, 55);
-            this.duongComboBox.MinimumSize = new System.Drawing.Size(300, 52);
-            this.duongComboBox.Name = "duongComboBox";
-            this.duongComboBox.Padding = new System.Windows.Forms.Padding(3);
-            this.duongComboBox.Size = new System.Drawing.Size(354, 52);
-            this.duongComboBox.TabIndex = 6;
-            this.duongComboBox.Texts = "";
+            this.soNhaTextBox.Size = new System.Drawing.Size(1050, 113);
+            this.soNhaTextBox.TabIndex = 6;
             // 
             // phuongComboBox
             // 
@@ -438,7 +381,7 @@ namespace PBL3.Views.CustomerForm
             this.phuongComboBox.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.phuongComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.phuongComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.phuongComboBox.Location = new System.Drawing.Point(405, 193);
+            this.phuongComboBox.Location = new System.Drawing.Point(1101, 55);
             this.phuongComboBox.MinimumSize = new System.Drawing.Size(300, 52);
             this.phuongComboBox.Name = "phuongComboBox";
             this.phuongComboBox.Padding = new System.Windows.Forms.Padding(3);
@@ -465,6 +408,7 @@ namespace PBL3.Views.CustomerForm
             this.quanComboBox.Size = new System.Drawing.Size(354, 52);
             this.quanComboBox.TabIndex = 4;
             this.quanComboBox.Texts = "";
+            this.quanComboBox.OnSelectedIndexChanged += new System.EventHandler(this.quanComboBox_OnSelectedIndexChanged);
             // 
             // label5
             // 
@@ -473,7 +417,7 @@ namespace PBL3.Views.CustomerForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(896, 204);
+            this.label5.Location = new System.Drawing.Point(93, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 31);
             this.label5.TabIndex = 3;
@@ -486,24 +430,11 @@ namespace PBL3.Views.CustomerForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(156, 204);
+            this.label4.Location = new System.Drawing.Point(892, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(170, 31);
             this.label4.TabIndex = 2;
             this.label4.Text = "Phường/Xã : ";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(896, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 31);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Đường phố :";
             // 
             // label2
             // 
@@ -512,7 +443,7 @@ namespace PBL3.Views.CustomerForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(156, 66);
+            this.label2.Location = new System.Drawing.Point(93, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 31);
             this.label2.TabIndex = 0;
@@ -553,7 +484,7 @@ namespace PBL3.Views.CustomerForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PBL3.Properties.Resources.loginBackgroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1720, 1596);
+            this.ClientSize = new System.Drawing.Size(1720, 1648);
             this.Controls.Add(this.customPanel1);
             this.MinimumSize = new System.Drawing.Size(1746, 1667);
             this.Name = "ArticleUpdateForm";
@@ -582,10 +513,7 @@ namespace PBL3.Views.CustomerForm
         private System.Windows.Forms.GroupBox diaChiGroupBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private CustomComponents.CustomTextBox soNhaTextBox;
-        private CustomComponents.CustomComboBox duongComboBox;
         private CustomComponents.CustomComboBox phuongComboBox;
         private CustomComponents.CustomComboBox quanComboBox;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -595,9 +523,6 @@ namespace PBL3.Views.CustomerForm
         private System.Windows.Forms.Label label6;
         private CustomComponents.CustomButton changeImgBtn;
         private System.Windows.Forms.Panel panel1;
-        private CustomComponents.CustomTextBox customTextBox2;
-        private CustomComponents.CustomTextBox customTextBox1;
-        private CustomComponents.CustomTextBox usernameTextbox;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -605,5 +530,11 @@ namespace PBL3.Views.CustomerForm
         private System.Windows.Forms.Panel panel2;
         private CustomComponents.CustomButton discardBtn;
         private CustomComponents.CustomButton updateBtn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox descTextbox;
+        private System.Windows.Forms.TextBox areaTextbox;
+        private System.Windows.Forms.TextBox priceTextbox;
+        private System.Windows.Forms.TextBox titleTextbox;
+        private System.Windows.Forms.TextBox soNhaTextBox;
     }
 }

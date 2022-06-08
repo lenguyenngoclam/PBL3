@@ -25,6 +25,15 @@ namespace PBL3.BLL
                 return address.AddressID;
             }
         }
+        public static void DeleteAddress(int? addressID)
+        {
+            using (var context = new MyData())
+            {
+                Address address = context.Addresses.Where(a => a.AddressID == addressID).FirstOrDefault();
+                context.Addresses.Remove(address);
+                context.SaveChanges();
+            }
+        }
         public static string GetFullAddressFormat(int? addressID)
         {
             if (addressID == null)
@@ -39,6 +48,21 @@ namespace PBL3.BLL
                 }
                 else
                     return "";
+            }
+        }
+
+        public static string GetDetailAddress(int? addressID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Addresses.Where(a => a.AddressID == addressID).FirstOrDefault().DetailAddress;
+            }
+        }
+        public static int GetWardIDByAddressID(int? addressID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Addresses.Where(a => a.AddressID == addressID).FirstOrDefault().WardID;
             }
         }
     }

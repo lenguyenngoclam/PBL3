@@ -47,13 +47,13 @@ namespace PBL3.Views.CustomerForm
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupbox2 = new System.Windows.Forms.GroupBox();
+            this.quanComboBox = new PBL3.Views.CustomComponents.CustomComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.soNhaTextBox = new PBL3.Views.CustomComponents.CustomTextBox();
             this.phuongComboBox = new PBL3.Views.CustomComponents.CustomComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.quanComboBox = new PBL3.Views.CustomComponents.CustomComboBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -373,6 +373,40 @@ namespace PBL3.Views.CustomerForm
             this.groupbox2.TabStop = false;
             this.groupbox2.Text = "Địa chỉ liên lạc";
             // 
+            // quanComboBox
+            // 
+            this.quanComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.quanComboBox.BackColor = System.Drawing.Color.White;
+            this.quanComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(209)))), ((int)(((byte)(166)))));
+            this.quanComboBox.BorderSize = 3;
+            this.quanComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.quanComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.quanComboBox.ForeColor = System.Drawing.Color.DimGray;
+            this.quanComboBox.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.quanComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.quanComboBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.quanComboBox.Location = new System.Drawing.Point(436, 88);
+            this.quanComboBox.MinimumSize = new System.Drawing.Size(300, 52);
+            this.quanComboBox.Name = "quanComboBox";
+            this.quanComboBox.Padding = new System.Windows.Forms.Padding(3);
+            this.quanComboBox.Size = new System.Drawing.Size(354, 52);
+            this.quanComboBox.TabIndex = 9;
+            this.quanComboBox.Texts = "";
+            this.quanComboBox.OnSelectedIndexChanged += new System.EventHandler(this.quanComboBox_OnSelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(161, 100);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 40);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Quận : ";
+            // 
             // soNhaTextBox
             // 
             this.soNhaTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -452,40 +486,6 @@ namespace PBL3.Views.CustomerForm
             this.label1.Size = new System.Drawing.Size(254, 71);
             this.label1.TabIndex = 8;
             this.label1.Text = "Đăng bài";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(161, 100);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 40);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Quận : ";
-            // 
-            // quanComboBox
-            // 
-            this.quanComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.quanComboBox.BackColor = System.Drawing.Color.White;
-            this.quanComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(209)))), ((int)(((byte)(166)))));
-            this.quanComboBox.BorderSize = 3;
-            this.quanComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.quanComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.quanComboBox.ForeColor = System.Drawing.Color.DimGray;
-            this.quanComboBox.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.quanComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.quanComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.quanComboBox.Location = new System.Drawing.Point(436, 88);
-            this.quanComboBox.MinimumSize = new System.Drawing.Size(300, 52);
-            this.quanComboBox.Name = "quanComboBox";
-            this.quanComboBox.Padding = new System.Windows.Forms.Padding(3);
-            this.quanComboBox.Size = new System.Drawing.Size(354, 52);
-            this.quanComboBox.TabIndex = 9;
-            this.quanComboBox.Texts = "";
-            this.quanComboBox.OnSelectedIndexChanged += new System.EventHandler(this.quanComboBox_OnSelectedIndexChanged);
             // 
             // ArticlePostingForm
             // 

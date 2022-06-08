@@ -100,6 +100,11 @@ namespace PBL3.DAL
                 new Image { ImageID = 2, PostID = 1, ImagePath = @"\phongtro1.jpg"},
                 new Image { ImageID = 3, PostID = 3, ImagePath = @"\phongtro2.jpg"},
                 new Image { ImageID = 4, PostID = 3, ImagePath = @"\phongtro3.jpg"},
+                new Image { ImageID = 5, PostID = 1, ImagePath = @"\phongtro2.jpg"},
+                new Image { ImageID = 6, PostID = 1, ImagePath = @"\phongtro3.jpg"},
+                new Image { ImageID = 7, PostID = 2, ImagePath = @"\phongtro2.jpg"},
+                new Image { ImageID = 8, PostID = 2, ImagePath = @"\phongtro3.jpg"},
+                new Image { ImageID = 9, PostID = 2, ImagePath = @"\phongtro1.jpg"}
             });
 
             context.Comments.AddRange(new Comment[]

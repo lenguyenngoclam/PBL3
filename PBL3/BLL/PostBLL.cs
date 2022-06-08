@@ -80,5 +80,25 @@ namespace PBL3.BLL
                 return post.PostID;
             }
         }
+        public static void UpdatePost(int postID, int newAddressID, string title, string desc, int price, double area)
+        {
+            using (var context = new MyData())
+            {
+                Post post = context.Posts.Where(p => p.PostID == postID).FirstOrDefault();
+                post.AddressID = newAddressID;
+                post.Title = title;
+                post.Description = desc;
+                post.Price = price;
+                post.Square = area;
+                context.SaveChanges();
+            }
+        }
+        public static int? GetAddressIDByPostID(int postID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Posts.Where(p => p.PostID == postID).FirstOrDefault().AddressID;      
+            }
+        }
     }
 }

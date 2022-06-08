@@ -26,7 +26,7 @@ namespace PBL3.Views.CustomerForm
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            ArticleUpdateForm form = new ArticleUpdateForm();
+            ArticleUpdateForm form = new ArticleUpdateForm(2);
             form.ShowDialog();
         }
 

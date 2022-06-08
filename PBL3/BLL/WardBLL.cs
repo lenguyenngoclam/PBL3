@@ -25,6 +25,13 @@ namespace PBL3.BLL
                 return context.Wards.Where(ward => ward.WardName == wardName).FirstOrDefault().WardID;
             }
         }
+        public static string GetWardNameByID(int wardID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Wards.Where(w => w.WardID == wardID).FirstOrDefault().WardName;
+            }
+        }
         public static string GetFullAddressFormat(int wardID)
         {
             using (var context = new MyData())
@@ -45,6 +52,14 @@ namespace PBL3.BLL
             using (var context = new MyData())
             {
                 return context.Wards.Where(ward => ward.DistrictID == districtID).ToList();
+            }
+        }
+
+        public static int GetDistrictIDByWardID(int wardID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Wards.Where(w => w.WardID == wardID).FirstOrDefault().DistrictID;
             }
         }
     }

@@ -50,5 +50,28 @@ namespace PBL3.BLL
                 context.SaveChanges();
             }
         }
+
+        public static void DeleteImageFromFolder(string appPath)
+        {
+            appPath = appPath + @"\";
+            DirectoryInfo d = new DirectoryInfo(appPath);
+
+            FileInfo[] Files = d.GetFiles();
+
+            foreach (FileInfo file in Files)
+            {
+                File.Delete(appPath + file.Name);
+            }
+        }
+
+        public static void DeleteImageFromPost(int postID)
+        {
+            using (var context = new MyData())
+            {
+                List<Image> images = context.Images.Where(i => i.PostID == postID).ToList();
+                images.ForEach(image => context.Images.Remove(image));
+                context.SaveChanges();
+            }
+        }
     }
 }
