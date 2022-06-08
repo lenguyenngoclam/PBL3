@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL3.Views.CommonForm;
+using PBL3.BLL;
 
 namespace PBL3.Views.CustomerForm
 {
@@ -36,5 +37,18 @@ namespace PBL3.Views.CustomerForm
             form.ShowDialog();
         }
 
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xoá ? Sau khi xoá không thể thực hiện lại",
+                "Xác nhận",
+                MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                PostBLL.DeletePost(2);
+                MessageBox.Show("Xoá thành công!");
+            }
+            else
+                return;
+        }
     }
 }

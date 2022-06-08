@@ -93,6 +93,17 @@ namespace PBL3.BLL
                 context.SaveChanges();
             }
         }
+
+        public static void DeletePost(int postID)
+        {
+            using (var context = new MyData())
+            {
+                Post post = context.Posts.Where(p => p.PostID == postID).FirstOrDefault();
+                context.Posts.Remove(post);
+                ImageBLL.DeleteImageFromFolder(ImageBLL.GetImageStoragePathsOfPost(postID));
+                context.SaveChanges();
+            }
+        }
         public static int? GetAddressIDByPostID(int postID)
         {
             using (var context = new MyData())

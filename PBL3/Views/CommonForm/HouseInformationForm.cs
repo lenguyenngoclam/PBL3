@@ -12,6 +12,7 @@ using PBL3.Properties;
 using PBL3.DTO;
 using PBL3.BLL;
 using PBL3.DTO.ViewDTO;
+using System.IO;
 
 namespace PBL3.Views.CommonForm
 {
@@ -166,8 +167,16 @@ namespace PBL3.Views.CommonForm
             {
                 PostViewDTO post = PostBLL.GetPostByID(PostID);
                 string imagePath = ImageBLL.GetImageStoragePathsOfPost(PostID);
-                post.ImagePaths.ForEach(image
-                    => imageList1.Images.Add(System.Drawing.Image.FromFile(imagePath + image)));
+                post.ImagePaths
+                .ForEach(image =>
+                {
+                    System.Drawing.Image image1;
+                    using (Stream stream = File.OpenRead(imagePath + image))
+                    {
+                        image1 = System.Drawing.Image.FromStream(stream);
+                    }
+                    imageList1.Images.Add(image1);
+                });
             }
             catch (Exception exp)
             {

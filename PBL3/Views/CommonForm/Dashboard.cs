@@ -53,7 +53,12 @@ namespace PBL3.Views.CommonForm
                     Directory.CreateDirectory(imagePath);
                 if(postView[0].ImagePaths.Count > 0)
                 {
-                    houseInfoComponent1.PictureBox = System.Drawing.Image.FromFile(imagePath + postView[0].ImagePaths[0]);
+                    System.Drawing.Image image1;
+                    using (Stream stream = File.OpenRead(imagePath + postView[0].ImagePaths[0]))
+                    {
+                        image1 = System.Drawing.Image.FromStream(stream);
+                    }
+                    houseInfoComponent1.PictureBox = image1;
                 }
             }
             if (houseInfoComponent2.Visible)
@@ -69,7 +74,12 @@ namespace PBL3.Views.CommonForm
                     Directory.CreateDirectory(imagePath);
                 if (postView[1].ImagePaths.Count > 0)
                 {
-                    houseInfoComponent2.PictureBox = System.Drawing.Image.FromFile(imagePath + postView[1].ImagePaths[0]);
+                    System.Drawing.Image image1;
+                    using (Stream stream = File.OpenRead(imagePath + postView[1].ImagePaths[0]))
+                    {
+                        image1 = System.Drawing.Image.FromStream(stream);
+                    }
+                    houseInfoComponent2.PictureBox = image1;
                 }
             }
             if (houseInfoComponent3.Visible)
@@ -85,7 +95,12 @@ namespace PBL3.Views.CommonForm
                     Directory.CreateDirectory(imagePath);
                 if (postView[2].ImagePaths.Count > 0)
                 {
-                    houseInfoComponent3.PictureBox = System.Drawing.Image.FromFile(imagePath + postView[2].ImagePaths[0]);
+                    System.Drawing.Image image1;
+                    using (Stream stream = File.OpenRead(imagePath + postView[2].ImagePaths[0]))
+                    {
+                        image1 = System.Drawing.Image.FromStream(stream);
+                    }
+                    houseInfoComponent3.PictureBox = image1;
                 }
             }
             if (houseInfoComponent4.Visible)
@@ -101,7 +116,12 @@ namespace PBL3.Views.CommonForm
                     Directory.CreateDirectory(imagePath);
                 if (postView[3].ImagePaths.Count > 0)
                 {
-                    houseInfoComponent4.PictureBox = System.Drawing.Image.FromFile(imagePath + postView[3].ImagePaths[0]);
+                    System.Drawing.Image image1;
+                    using (Stream stream = File.OpenRead(imagePath + postView[3].ImagePaths[0]))
+                    {
+                        image1 = System.Drawing.Image.FromStream(stream);
+                    }
+                    houseInfoComponent4.PictureBox = image1;
                 }
             }
             if (houseInfoComponent5.Visible)
@@ -117,7 +137,12 @@ namespace PBL3.Views.CommonForm
                     Directory.CreateDirectory(imagePath);
                 if (postView[4].ImagePaths.Count > 0)
                 {
-                    houseInfoComponent5.PictureBox = System.Drawing.Image.FromFile(imagePath + postView[4].ImagePaths[0]);
+                    System.Drawing.Image image1;
+                    using (Stream stream = File.OpenRead(imagePath + postView[4].ImagePaths[0]))
+                    {
+                        image1 = System.Drawing.Image.FromStream(stream);
+                    }
+                    houseInfoComponent5.PictureBox = image1;
                 }
             }
         }

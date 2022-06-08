@@ -76,6 +76,7 @@ namespace PBL3.Views.CustomerForm
             this.deleteBtn.Text = "Xoá bài đăng";
             this.deleteBtn.TextColor = System.Drawing.Color.White;
             this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // uploadBtn
             // 
