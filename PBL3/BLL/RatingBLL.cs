@@ -46,5 +46,22 @@ namespace PBL3.BLL
                 return context.Ratings.Where(c => c.UserID == userID && c.PostID == postID).FirstOrDefault().Star;
             }
         }
+        public static void DeleteStarByPostID(int postID)
+        {
+            using (var context = new MyData())
+            {
+                List<Rating> ls = context.Ratings.Where(r => r.PostID == postID).ToList();
+                ls.ForEach(rating => context.Ratings.Remove(rating));
+            }
+        }
+
+        public static void DeleteUserRating(int userID)
+        {
+            using (var context = new MyData())
+            {
+                List<Rating> ls = context.Ratings.Where(r => r.UserID == userID).ToList();
+                ls.ForEach(rating => context.Ratings.Remove(rating));
+            }
+        }
     }
 }

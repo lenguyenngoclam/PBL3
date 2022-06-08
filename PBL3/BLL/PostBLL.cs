@@ -101,6 +101,8 @@ namespace PBL3.BLL
                 Post post = context.Posts.Where(p => p.PostID == postID).FirstOrDefault();
                 context.Posts.Remove(post);
                 ImageBLL.DeleteImageFromFolder(ImageBLL.GetImageStoragePathsOfPost(postID));
+                RatingBLL.DeleteStarByPostID(postID);
+                CommentBLL.DeleteCommentInPost(postID);
                 context.SaveChanges();
             }
         }

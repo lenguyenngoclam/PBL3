@@ -66,5 +66,23 @@ namespace PBL3.BLL
                 return ls;
             }
         }
+
+        public static void DeleteCommentInPost(int postID)
+        {
+            using (var context = new MyData())
+            {
+                List<Comment> ls = context.Comments.Where(c => c.PostID == postID).ToList();
+                ls.ForEach(comment => context.Comments.Remove(comment));
+            }
+        }
+
+        public static void DeleteUserComment(int userID)
+        {
+            using (var context = new MyData())
+            {
+                List<Comment> ls = context.Comments.Where(c => c.UserID == userID).ToList();
+                ls.ForEach(comment => context.Comments.Remove(comment));
+            }
+        }
     }
 }
