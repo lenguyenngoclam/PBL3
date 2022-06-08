@@ -34,6 +34,16 @@ namespace PBL3.BLL
                 context.SaveChanges();
             }
         }
+
+        public static void UpdateAddress(string detailAddress, int addressID)
+        {
+            using (var context = new MyData())
+            {
+                Address address = context.Addresses.Where(a => a.AddressID == addressID).FirstOrDefault();
+                address.DetailAddress = detailAddress;
+                context.SaveChanges();
+            }
+        }
         public static string GetFullAddressFormat(int? addressID)
         {
             if (addressID == null)

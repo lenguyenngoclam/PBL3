@@ -30,26 +30,25 @@ namespace PBL3.Views.CustomerForm
         private void InitializeComponent()
         {
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.signOutBtn = new FontAwesome.Sharp.IconButton();
             this.MessageBtn = new FontAwesome.Sharp.IconButton();
             this.articleManagementBtn = new FontAwesome.Sharp.IconButton();
             this.panelInfomationSubmenu = new System.Windows.Forms.Panel();
             this.infomationChangeBtn = new FontAwesome.Sharp.IconButton();
-            this.changePhoneBtn = new FontAwesome.Sharp.IconButton();
             this.changePassBtn = new FontAwesome.Sharp.IconButton();
             this.idBtn = new FontAwesome.Sharp.IconButton();
             this.informationBtn = new FontAwesome.Sharp.IconButton();
             this.homeBtn = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelInfomationSubmenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelChildForm
@@ -58,12 +57,23 @@ namespace PBL3.Views.CustomerForm
             this.panelChildForm.BackColor = System.Drawing.Color.AliceBlue;
             this.panelChildForm.Controls.Add(this.pictureBox2);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(207, 0);
-            this.panelChildForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panelChildForm.MinimumSize = new System.Drawing.Size(800, 576);
+            this.panelChildForm.Location = new System.Drawing.Point(310, 0);
+            this.panelChildForm.MinimumSize = new System.Drawing.Size(1200, 900);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1076, 675);
+            this.panelChildForm.Size = new System.Drawing.Size(1614, 1055);
             this.panelChildForm.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::PBL3.Properties.Resources.Tìm_trọ__3_;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1614, 1055);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // panelMenu
             // 
@@ -77,9 +87,8 @@ namespace PBL3.Views.CustomerForm
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(207, 675);
+            this.panelMenu.Size = new System.Drawing.Size(310, 1055);
             this.panelMenu.TabIndex = 0;
             // 
             // signOutBtn
@@ -95,11 +104,10 @@ namespace PBL3.Views.CustomerForm
             this.signOutBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.signOutBtn.IconSize = 45;
             this.signOutBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.signOutBtn.Location = new System.Drawing.Point(0, 622);
-            this.signOutBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.signOutBtn.Location = new System.Drawing.Point(0, 892);
             this.signOutBtn.Name = "signOutBtn";
-            this.signOutBtn.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.signOutBtn.Size = new System.Drawing.Size(207, 64);
+            this.signOutBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.signOutBtn.Size = new System.Drawing.Size(310, 100);
             this.signOutBtn.TabIndex = 6;
             this.signOutBtn.Text = "Đăng xuất";
             this.signOutBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,11 +128,10 @@ namespace PBL3.Views.CustomerForm
             this.MessageBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MessageBtn.IconSize = 45;
             this.MessageBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MessageBtn.Location = new System.Drawing.Point(0, 558);
-            this.MessageBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MessageBtn.Location = new System.Drawing.Point(0, 792);
             this.MessageBtn.Name = "MessageBtn";
-            this.MessageBtn.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.MessageBtn.Size = new System.Drawing.Size(207, 64);
+            this.MessageBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.MessageBtn.Size = new System.Drawing.Size(310, 100);
             this.MessageBtn.TabIndex = 5;
             this.MessageBtn.Text = "Liên hệ";
             this.MessageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -145,11 +152,10 @@ namespace PBL3.Views.CustomerForm
             this.articleManagementBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.articleManagementBtn.IconSize = 45;
             this.articleManagementBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.articleManagementBtn.Location = new System.Drawing.Point(0, 494);
-            this.articleManagementBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.articleManagementBtn.Location = new System.Drawing.Point(0, 692);
             this.articleManagementBtn.Name = "articleManagementBtn";
-            this.articleManagementBtn.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.articleManagementBtn.Size = new System.Drawing.Size(207, 64);
+            this.articleManagementBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.articleManagementBtn.Size = new System.Drawing.Size(310, 100);
             this.articleManagementBtn.TabIndex = 4;
             this.articleManagementBtn.Text = "Quản lí bài đăng";
             this.articleManagementBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,14 +166,12 @@ namespace PBL3.Views.CustomerForm
             // panelInfomationSubmenu
             // 
             this.panelInfomationSubmenu.Controls.Add(this.infomationChangeBtn);
-            this.panelInfomationSubmenu.Controls.Add(this.changePhoneBtn);
             this.panelInfomationSubmenu.Controls.Add(this.changePassBtn);
             this.panelInfomationSubmenu.Controls.Add(this.idBtn);
             this.panelInfomationSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelInfomationSubmenu.Location = new System.Drawing.Point(0, 279);
-            this.panelInfomationSubmenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelInfomationSubmenu.Location = new System.Drawing.Point(0, 436);
             this.panelInfomationSubmenu.Name = "panelInfomationSubmenu";
-            this.panelInfomationSubmenu.Size = new System.Drawing.Size(207, 215);
+            this.panelInfomationSubmenu.Size = new System.Drawing.Size(310, 256);
             this.panelInfomationSubmenu.TabIndex = 3;
             // 
             // infomationChangeBtn
@@ -181,38 +185,15 @@ namespace PBL3.Views.CustomerForm
             this.infomationChangeBtn.IconColor = System.Drawing.Color.Black;
             this.infomationChangeBtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.infomationChangeBtn.IconSize = 30;
-            this.infomationChangeBtn.Location = new System.Drawing.Point(0, 162);
-            this.infomationChangeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.infomationChangeBtn.Location = new System.Drawing.Point(0, 168);
             this.infomationChangeBtn.Name = "infomationChangeBtn";
-            this.infomationChangeBtn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.infomationChangeBtn.Size = new System.Drawing.Size(207, 54);
+            this.infomationChangeBtn.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
+            this.infomationChangeBtn.Size = new System.Drawing.Size(310, 84);
             this.infomationChangeBtn.TabIndex = 3;
             this.infomationChangeBtn.Text = "Đổi thông tin cá nhân";
             this.infomationChangeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.infomationChangeBtn.UseVisualStyleBackColor = false;
             this.infomationChangeBtn.Click += new System.EventHandler(this.infomationChangeBtn_Click);
-            // 
-            // changePhoneBtn
-            // 
-            this.changePhoneBtn.BackColor = System.Drawing.Color.LightGreen;
-            this.changePhoneBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.changePhoneBtn.FlatAppearance.BorderSize = 0;
-            this.changePhoneBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changePhoneBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changePhoneBtn.IconChar = FontAwesome.Sharp.IconChar.Portrait;
-            this.changePhoneBtn.IconColor = System.Drawing.Color.Black;
-            this.changePhoneBtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.changePhoneBtn.IconSize = 30;
-            this.changePhoneBtn.Location = new System.Drawing.Point(0, 108);
-            this.changePhoneBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.changePhoneBtn.Name = "changePhoneBtn";
-            this.changePhoneBtn.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.changePhoneBtn.Size = new System.Drawing.Size(207, 54);
-            this.changePhoneBtn.TabIndex = 2;
-            this.changePhoneBtn.Text = "Đổi số điện thoại";
-            this.changePhoneBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.changePhoneBtn.UseVisualStyleBackColor = false;
-            this.changePhoneBtn.Click += new System.EventHandler(this.changePhoneBtn_Click);
             // 
             // changePassBtn
             // 
@@ -225,11 +206,10 @@ namespace PBL3.Views.CustomerForm
             this.changePassBtn.IconColor = System.Drawing.Color.Black;
             this.changePassBtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.changePassBtn.IconSize = 30;
-            this.changePassBtn.Location = new System.Drawing.Point(0, 54);
-            this.changePassBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.changePassBtn.Location = new System.Drawing.Point(0, 84);
             this.changePassBtn.Name = "changePassBtn";
-            this.changePassBtn.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.changePassBtn.Size = new System.Drawing.Size(207, 54);
+            this.changePassBtn.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.changePassBtn.Size = new System.Drawing.Size(310, 84);
             this.changePassBtn.TabIndex = 1;
             this.changePassBtn.Text = "Đổi mật khẩu";
             this.changePassBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -248,10 +228,9 @@ namespace PBL3.Views.CustomerForm
             this.idBtn.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.idBtn.IconSize = 30;
             this.idBtn.Location = new System.Drawing.Point(0, 0);
-            this.idBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.idBtn.Name = "idBtn";
-            this.idBtn.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.idBtn.Size = new System.Drawing.Size(207, 54);
+            this.idBtn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.idBtn.Size = new System.Drawing.Size(310, 84);
             this.idBtn.TabIndex = 0;
             this.idBtn.Text = "Thông tin cá nhân";
             this.idBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -271,11 +250,10 @@ namespace PBL3.Views.CustomerForm
             this.informationBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.informationBtn.IconSize = 45;
             this.informationBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.informationBtn.Location = new System.Drawing.Point(0, 215);
-            this.informationBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.informationBtn.Location = new System.Drawing.Point(0, 336);
             this.informationBtn.Name = "informationBtn";
-            this.informationBtn.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.informationBtn.Size = new System.Drawing.Size(207, 64);
+            this.informationBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.informationBtn.Size = new System.Drawing.Size(310, 100);
             this.informationBtn.TabIndex = 2;
             this.informationBtn.Text = "Cá nhân";
             this.informationBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -296,11 +274,10 @@ namespace PBL3.Views.CustomerForm
             this.homeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.homeBtn.IconSize = 45;
             this.homeBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homeBtn.Location = new System.Drawing.Point(0, 151);
-            this.homeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homeBtn.Location = new System.Drawing.Point(0, 236);
             this.homeBtn.Name = "homeBtn";
-            this.homeBtn.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
-            this.homeBtn.Size = new System.Drawing.Size(207, 64);
+            this.homeBtn.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.homeBtn.Size = new System.Drawing.Size(310, 100);
             this.homeBtn.TabIndex = 1;
             this.homeBtn.Text = "Trang chủ";
             this.homeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -314,9 +291,8 @@ namespace PBL3.Views.CustomerForm
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(207, 151);
+            this.panelLogo.Size = new System.Drawing.Size(310, 236);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox1
@@ -326,43 +302,30 @@ namespace PBL3.Views.CustomerForm
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::PBL3.Properties.Resources.icons8_customer_96;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(207, 151);
+            this.pictureBox1.Size = new System.Drawing.Size(310, 236);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::PBL3.Properties.Resources.Tìm_trọ__3_;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1076, 675);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // CustomerMainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 675);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelMenu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MinimumSize = new System.Drawing.Size(1285, 683);
+            this.MinimumSize = new System.Drawing.Size(1914, 1027);
             this.Name = "CustomerMainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer Main Page";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelChildForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelInfomationSubmenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -378,7 +341,6 @@ namespace PBL3.Views.CustomerForm
         private FontAwesome.Sharp.IconButton MessageBtn;
         private FontAwesome.Sharp.IconButton articleManagementBtn;
         private System.Windows.Forms.Panel panelInfomationSubmenu;
-        private FontAwesome.Sharp.IconButton changePhoneBtn;
         private FontAwesome.Sharp.IconButton changePassBtn;
         private FontAwesome.Sharp.IconButton idBtn;
         private FontAwesome.Sharp.IconButton informationBtn;

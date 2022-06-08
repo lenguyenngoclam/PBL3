@@ -34,7 +34,17 @@ namespace PBL3.BLL
                 context.SaveChanges();
             }
         }
-        
+        public static void UpdateUserInformation(int userID, string phoneNumber, string fullName, string detailAddress)
+        {
+            using(var context = new MyData())
+            {
+                User user = context.Users.Where(u => u.UserID == userID).FirstOrDefault();
+                user.FullName = fullName;
+                user.Phone = phoneNumber;
+                AddressBLL.UpdateAddress(detailAddress, user.AddressID);
+                context.SaveChanges();
+            }
+        }
         public static User GetUserByID(int? userID)
         {
             if (userID == null)

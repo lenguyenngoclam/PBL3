@@ -105,17 +105,14 @@ namespace PBL3.Views.CustomerForm
 
         private void infomationChangeBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new InformationUpdateForm());
+            InformationUpdateForm form = new InformationUpdateForm();
+            form.openInformationForm = OpenChildForm;
+            OpenChildForm(form);
         }
 
         private void changePassBtn_Click(object sender, EventArgs e)
         {
             OpenChildForm(new ChangePasswordForm());
-        }
-
-        private void changePhoneBtn_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChangePhoneNumberForm());
         }
 
     }

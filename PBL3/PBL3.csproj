@@ -342,12 +342,6 @@
     <Compile Include="Views\CustomerForm\ArticleUpdateForm.Designer.cs">
       <DependentUpon>ArticleUpdateForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\CustomerForm\ChangePhoneNumberForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\CustomerForm\ChangePhoneNumberForm.Designer.cs">
-      <DependentUpon>ChangePhoneNumberForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\CustomerForm\CustomerMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -435,9 +429,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerForm\ArticleUpdateForm.resx">
       <DependentUpon>ArticleUpdateForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\CustomerForm\ChangePhoneNumberForm.resx">
-      <DependentUpon>ChangePhoneNumberForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CustomerForm\CustomerMainPage.resx">
       <DependentUpon>CustomerMainPage.cs</DependentUpon>

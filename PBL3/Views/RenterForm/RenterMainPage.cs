@@ -77,14 +77,11 @@ namespace PBL3.Views.RenterForm
             OpenChildForm(new ChangePasswordForm());
         }
 
-        private void changePhoneBtn_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChangePhoneNumberForm());
-        }
-
         private void infomationChangeBtn_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new InformationUpdateForm());
+            InformationUpdateForm form = new InformationUpdateForm();
+            form.openInformationForm = OpenChildForm;
+            OpenChildForm(form);
         }
 
         private void MessageBtn_Click(object sender, EventArgs e)
