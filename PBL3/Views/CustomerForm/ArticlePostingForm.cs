@@ -25,7 +25,8 @@ namespace PBL3.Views.CustomerForm
             InitializeComponent();
             ImagePathList = new List<string>();
             imageFileName = new List<string>();
-            WardBLL.GetAllWards().ForEach(ward => phuongComboBox.Items.Add(ward.WardName));
+            DistrictBLL.GetAllDistricts().ForEach(district => quanComboBox.Items.Add(district.DistrictName));
+            quanComboBox.SelectedIndex = 0;
         }
 
         private void uploadImgBtn_Click(object sender, EventArgs e)
@@ -73,6 +74,11 @@ namespace PBL3.Views.CustomerForm
 
         private void uploadArticleBtn_Click(object sender, EventArgs e)
         {
+            if(ImagePathList.Count == 0)
+            {
+                MessageBox.Show("Bạn phải chọn ảnh");
+                return;
+            }
             int addressID = AddressBLL.AddAddress(soNhaTextBox.Texts, WardBLL.GetWardIDByName(phuongComboBox.SelectedItem.ToString()));
             int postID = PostBLL.AddPost(LoginInfo.UserID, addressID, titleTextbox.Texts, descTextbox.Texts, Convert.ToInt32(priceTextBox.Texts),
                                                                 Convert.ToDouble(areaTextbox.Texts));
@@ -90,6 +96,15 @@ namespace PBL3.Views.CustomerForm
         private void discardBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void quanComboBox_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            phuongComboBox.Items.Clear();
+            string districtName = quanComboBox.SelectedItem.ToString();
+            WardBLL.GetWardByDistrictID(DistrictBLL.GetDistrictIDByName(districtName))
+                .ForEach(w => phuongComboBox.Items.Add(w.WardName));
+            phuongComboBox.SelectedIndex = 0;
         }
     }
 }

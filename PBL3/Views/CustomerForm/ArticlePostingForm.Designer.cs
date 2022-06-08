@@ -30,6 +30,8 @@ namespace PBL3.Views.CustomerForm
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.descTextbox = new PBL3.Views.CustomComponents.CustomTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.discardBtn = new PBL3.Views.CustomComponents.CustomButton();
             this.uploadArticleBtn = new PBL3.Views.CustomComponents.CustomButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -50,8 +52,8 @@ namespace PBL3.Views.CustomerForm
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.descTextbox = new PBL3.Views.CustomComponents.CustomTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.quanComboBox = new PBL3.Views.CustomComponents.CustomComboBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -83,6 +85,42 @@ namespace PBL3.Views.CustomerForm
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin mô tả";
+            // 
+            // descTextbox
+            // 
+            this.descTextbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.descTextbox.BackColor = System.Drawing.SystemColors.Window;
+            this.descTextbox.BorderColor = System.Drawing.Color.Blue;
+            this.descTextbox.BorderFocusColor = System.Drawing.Color.DarkOrchid;
+            this.descTextbox.BorderRadius = 10;
+            this.descTextbox.BorderSize = 2;
+            this.descTextbox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descTextbox.ForeColor = System.Drawing.Color.DimGray;
+            this.descTextbox.Location = new System.Drawing.Point(436, 398);
+            this.descTextbox.Margin = new System.Windows.Forms.Padding(6);
+            this.descTextbox.Multiline = true;
+            this.descTextbox.Name = "descTextbox";
+            this.descTextbox.Padding = new System.Windows.Forms.Padding(30, 6, 10, 6);
+            this.descTextbox.PasswordChar = false;
+            this.descTextbox.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.descTextbox.PlaceholderText = "Miêu tả";
+            this.descTextbox.Size = new System.Drawing.Size(1122, 112);
+            this.descTextbox.TabIndex = 14;
+            this.descTextbox.Texts = "";
+            this.descTextbox.UnderlinedStyle = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(91, 398);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 40);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Miêu tả :";
             // 
             // discardBtn
             // 
@@ -321,6 +359,8 @@ namespace PBL3.Views.CustomerForm
             // 
             this.groupbox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(209)))), ((int)(((byte)(166)))));
+            this.groupbox2.Controls.Add(this.quanComboBox);
+            this.groupbox2.Controls.Add(this.label3);
             this.groupbox2.Controls.Add(this.soNhaTextBox);
             this.groupbox2.Controls.Add(this.phuongComboBox);
             this.groupbox2.Controls.Add(this.label5);
@@ -368,7 +408,7 @@ namespace PBL3.Views.CustomerForm
             this.phuongComboBox.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.phuongComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.phuongComboBox.ListTextColor = System.Drawing.Color.DimGray;
-            this.phuongComboBox.Location = new System.Drawing.Point(436, 88);
+            this.phuongComboBox.Location = new System.Drawing.Point(1224, 88);
             this.phuongComboBox.MinimumSize = new System.Drawing.Size(300, 52);
             this.phuongComboBox.Name = "phuongComboBox";
             this.phuongComboBox.Padding = new System.Windows.Forms.Padding(3);
@@ -396,7 +436,7 @@ namespace PBL3.Views.CustomerForm
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(93, 88);
+            this.label4.Location = new System.Drawing.Point(1024, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 40);
             this.label4.TabIndex = 2;
@@ -413,41 +453,39 @@ namespace PBL3.Views.CustomerForm
             this.label1.TabIndex = 8;
             this.label1.Text = "Đăng bài";
             // 
-            // label2
+            // label3
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(91, 398);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 40);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Miêu tả :";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(161, 100);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(111, 40);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Quận : ";
             // 
-            // descTextbox
+            // quanComboBox
             // 
-            this.descTextbox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.descTextbox.BackColor = System.Drawing.SystemColors.Window;
-            this.descTextbox.BorderColor = System.Drawing.Color.Blue;
-            this.descTextbox.BorderFocusColor = System.Drawing.Color.DarkOrchid;
-            this.descTextbox.BorderRadius = 10;
-            this.descTextbox.BorderSize = 2;
-            this.descTextbox.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descTextbox.ForeColor = System.Drawing.Color.DimGray;
-            this.descTextbox.Location = new System.Drawing.Point(436, 398);
-            this.descTextbox.Margin = new System.Windows.Forms.Padding(6);
-            this.descTextbox.Multiline = true;
-            this.descTextbox.Name = "descTextbox";
-            this.descTextbox.Padding = new System.Windows.Forms.Padding(30, 6, 10, 6);
-            this.descTextbox.PasswordChar = false;
-            this.descTextbox.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.descTextbox.PlaceholderText = "Miêu tả";
-            this.descTextbox.Size = new System.Drawing.Size(1122, 112);
-            this.descTextbox.TabIndex = 14;
-            this.descTextbox.Texts = "";
-            this.descTextbox.UnderlinedStyle = false;
+            this.quanComboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.quanComboBox.BackColor = System.Drawing.Color.White;
+            this.quanComboBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(209)))), ((int)(((byte)(166)))));
+            this.quanComboBox.BorderSize = 3;
+            this.quanComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.quanComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.quanComboBox.ForeColor = System.Drawing.Color.DimGray;
+            this.quanComboBox.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.quanComboBox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.quanComboBox.ListTextColor = System.Drawing.Color.DimGray;
+            this.quanComboBox.Location = new System.Drawing.Point(436, 88);
+            this.quanComboBox.MinimumSize = new System.Drawing.Size(300, 52);
+            this.quanComboBox.Name = "quanComboBox";
+            this.quanComboBox.Padding = new System.Windows.Forms.Padding(3);
+            this.quanComboBox.Size = new System.Drawing.Size(354, 52);
+            this.quanComboBox.TabIndex = 9;
+            this.quanComboBox.Texts = "";
+            this.quanComboBox.OnSelectedIndexChanged += new System.EventHandler(this.quanComboBox_OnSelectedIndexChanged);
             // 
             // ArticlePostingForm
             // 
@@ -501,5 +539,7 @@ namespace PBL3.Views.CustomerForm
         private CustomComponents.CustomButton discardBtn;
         private CustomComponents.CustomTextBox descTextbox;
         private System.Windows.Forms.Label label2;
+        private CustomComponents.CustomComboBox quanComboBox;
+        private System.Windows.Forms.Label label3;
     }
 }

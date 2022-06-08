@@ -42,11 +42,11 @@ namespace PBL3.Views.CommonForm
             string imagePath;
             if (houseInfoComponent1.Visible)
             {
-                houseInfoComponent1.DescLabel += postView[0].Description;
-                houseInfoComponent1.AddressLabel = postView[0].Address;
+                houseInfoComponent1.DescLabel = "Miêu tả : " + postView[0].Description;
+                houseInfoComponent1.AddressLabel = "Địa chỉ : " + postView[0].Address;
                 houseInfoComponent1.HomeLink = postView[0].Title;
-                houseInfoComponent1.MoneyLabel += postView[0].Price;
-                houseInfoComponent1.AreaLabel += postView[0].Area;
+                houseInfoComponent1.MoneyLabel = "Số tiền : " +  postView[0].Price;
+                houseInfoComponent1.AreaLabel = "Diện tích : " +  postView[0].Area;
 
                 imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[0].PostID);
                 if (!Directory.Exists(imagePath))
@@ -58,11 +58,11 @@ namespace PBL3.Views.CommonForm
             }
             if (houseInfoComponent2.Visible)
             {
-                houseInfoComponent2.DescLabel += postView[1].Description;
-                houseInfoComponent2.AddressLabel = postView[1].Address;
+                houseInfoComponent2.DescLabel = "Miêu tả : " + postView[1].Description;
+                houseInfoComponent2.AddressLabel = "Địa chỉ : " + postView[1].Address;
                 houseInfoComponent2.HomeLink = postView[1].Title;
-                houseInfoComponent2.MoneyLabel += postView[1].Price;
-                houseInfoComponent2.AreaLabel += postView[1].Area;
+                houseInfoComponent2.MoneyLabel = "Số tiền : " + postView[1].Price;
+                houseInfoComponent2.AreaLabel = "Diện tích : " + postView[1].Area;
 
                 imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[1].PostID);
                 if (!Directory.Exists(imagePath))
@@ -74,11 +74,11 @@ namespace PBL3.Views.CommonForm
             }
             if (houseInfoComponent3.Visible)
             {
-                houseInfoComponent3.DescLabel += postView[2].Description;
-                houseInfoComponent3.AddressLabel = postView[2].Address;
+                houseInfoComponent3.DescLabel = "Miêu tả : " + postView[2].Description;
+                houseInfoComponent3.AddressLabel = "Địa chỉ : " + postView[2].Address;
                 houseInfoComponent3.HomeLink = postView[2].Title;
-                houseInfoComponent3.MoneyLabel += postView[2].Price;
-                houseInfoComponent3.AreaLabel += postView[2].Area;
+                houseInfoComponent3.MoneyLabel = "Số tiền : " + postView[2].Price;
+                houseInfoComponent3.AreaLabel = "Diện tích : " + postView[2].Area;
 
                 imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[2].PostID);
                 if (!Directory.Exists(imagePath))
@@ -90,11 +90,11 @@ namespace PBL3.Views.CommonForm
             }
             if (houseInfoComponent4.Visible)
             {
-                houseInfoComponent4.DescLabel += postView[3].Description;
-                houseInfoComponent4.AddressLabel = postView[3].Address;
+                houseInfoComponent4.DescLabel = "Miêu tả : " + postView[3].Description;
+                houseInfoComponent4.AddressLabel = "Địa chỉ : " + postView[3].Address;
                 houseInfoComponent4.HomeLink = postView[3].Title;
-                houseInfoComponent4.MoneyLabel += postView[3].Price;
-                houseInfoComponent4.AreaLabel += postView[3].Area;
+                houseInfoComponent4.MoneyLabel = "Số tiền : " + postView[3].Price;
+                houseInfoComponent4.AreaLabel = "Diện tích : " + postView[3].Area;
 
                 imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[3].PostID);
                 if (!Directory.Exists(imagePath))
@@ -106,11 +106,11 @@ namespace PBL3.Views.CommonForm
             }
             if (houseInfoComponent5.Visible)
             {
-                houseInfoComponent5.DescLabel += postView[4].Description;
-                houseInfoComponent5.AddressLabel = postView[4].Address;
+                houseInfoComponent5.DescLabel = "Miêu tả : " + postView[4].Description;
+                houseInfoComponent5.AddressLabel = "Địa chỉ : " + postView[4].Address;
                 houseInfoComponent5.HomeLink = postView[4].Title;
-                houseInfoComponent5.MoneyLabel += postView[4].Price;
-                houseInfoComponent5.AreaLabel += postView[4].Area;
+                houseInfoComponent5.MoneyLabel = "Số tiền : " + postView[4].Price;
+                houseInfoComponent5.AreaLabel = "Diện tích : " + postView[4].Area;
 
                 imagePath = ImageBLL.GetImageStoragePathsOfPost(postView[4].PostID);
                 if (!Directory.Exists(imagePath))

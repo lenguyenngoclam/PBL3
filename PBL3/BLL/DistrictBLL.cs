@@ -19,6 +19,14 @@ namespace PBL3.BLL
             }
         }
 
+        public static int GetDistrictIDByName(string name)
+        {
+            using (var context = new MyData())
+            {
+                return context.Districts.Where(d => d.DistrictName == name).FirstOrDefault().DistrictID;
+            }
+        }
+
         public static List<District> GetAllDistricts()
         {
             using (var context = new MyData())

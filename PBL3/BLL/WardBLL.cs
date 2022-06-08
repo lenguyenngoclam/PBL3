@@ -39,5 +39,13 @@ namespace PBL3.BLL
                     return "";
             }
         }
+
+        public static List<Ward> GetWardByDistrictID(int districtID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Wards.Where(ward => ward.DistrictID == districtID).ToList();
+            }
+        }
     }
 }

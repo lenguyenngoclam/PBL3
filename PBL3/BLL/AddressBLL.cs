@@ -35,7 +35,7 @@ namespace PBL3.BLL
                 if (address != null)
                 {
                     return $"Địa chỉ cụ thể : {address.DetailAddress} \n" +
-                        $" {WardBLL.GetFullAddressFormat(address.WardID)}";
+                        $"{WardBLL.GetFullAddressFormat(address.WardID)}";
                 }
                 else
                     return "";
