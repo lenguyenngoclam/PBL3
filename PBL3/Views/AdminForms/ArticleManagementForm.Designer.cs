@@ -50,9 +50,10 @@ namespace PBL3.Views.AdminForms
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 23);
+            this.label3.Location = new System.Drawing.Point(18, 36);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(225, 20);
+            this.label3.Size = new System.Drawing.Size(366, 32);
             this.label3.TabIndex = 10;
             this.label3.Text = "Lọc theo trạng thái đã phê duyệt";
             // 
@@ -72,11 +73,12 @@ namespace PBL3.Views.AdminForms
             "Chưa duyệt"});
             this.postedFilterCbb.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.postedFilterCbb.ListTextColor = System.Drawing.Color.DimGray;
-            this.postedFilterCbb.Location = new System.Drawing.Point(243, 12);
-            this.postedFilterCbb.MinimumSize = new System.Drawing.Size(200, 33);
+            this.postedFilterCbb.Location = new System.Drawing.Point(391, 19);
+            this.postedFilterCbb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.postedFilterCbb.MinimumSize = new System.Drawing.Size(300, 52);
             this.postedFilterCbb.Name = "postedFilterCbb";
-            this.postedFilterCbb.Padding = new System.Windows.Forms.Padding(3);
-            this.postedFilterCbb.Size = new System.Drawing.Size(200, 33);
+            this.postedFilterCbb.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.postedFilterCbb.Size = new System.Drawing.Size(300, 52);
             this.postedFilterCbb.TabIndex = 18;
             this.postedFilterCbb.Texts = "";
             // 
@@ -92,9 +94,10 @@ namespace PBL3.Views.AdminForms
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteBtn.Location = new System.Drawing.Point(287, 13);
+            this.deleteBtn.Location = new System.Drawing.Point(430, 20);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(156, 41);
+            this.deleteBtn.Size = new System.Drawing.Size(234, 64);
             this.deleteBtn.TabIndex = 17;
             this.deleteBtn.Text = "Xoá bài đăng";
             this.deleteBtn.TextColor = System.Drawing.Color.White;
@@ -112,13 +115,15 @@ namespace PBL3.Views.AdminForms
             this.confirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.confirmBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmBtn.ForeColor = System.Drawing.Color.White;
-            this.confirmBtn.Location = new System.Drawing.Point(701, 13);
+            this.confirmBtn.Location = new System.Drawing.Point(1052, 20);
+            this.confirmBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.confirmBtn.Name = "confirmBtn";
-            this.confirmBtn.Size = new System.Drawing.Size(156, 41);
+            this.confirmBtn.Size = new System.Drawing.Size(234, 64);
             this.confirmBtn.TabIndex = 16;
             this.confirmBtn.Text = "Duyệt bài đăng";
             this.confirmBtn.TextColor = System.Drawing.Color.White;
             this.confirmBtn.UseVisualStyleBackColor = false;
+            this.confirmBtn.Click += new System.EventHandler(this.confirmBtn_Click);
             // 
             // readBtn
             // 
@@ -132,9 +137,10 @@ namespace PBL3.Views.AdminForms
             this.readBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.readBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.readBtn.ForeColor = System.Drawing.Color.White;
-            this.readBtn.Location = new System.Drawing.Point(489, 13);
+            this.readBtn.Location = new System.Drawing.Point(734, 20);
+            this.readBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.readBtn.Name = "readBtn";
-            this.readBtn.Size = new System.Drawing.Size(156, 41);
+            this.readBtn.Size = new System.Drawing.Size(234, 64);
             this.readBtn.TabIndex = 15;
             this.readBtn.Text = "Xem bài đăng";
             this.readBtn.TextColor = System.Drawing.Color.White;
@@ -152,9 +158,10 @@ namespace PBL3.Views.AdminForms
             this.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchBtn.ForeColor = System.Drawing.Color.White;
-            this.searchBtn.Location = new System.Drawing.Point(887, 12);
+            this.searchBtn.Location = new System.Drawing.Point(1336, 7);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(202, 41);
+            this.searchBtn.Size = new System.Drawing.Size(303, 64);
             this.searchBtn.TabIndex = 14;
             this.searchBtn.Text = "Tìm kiếm";
             this.searchBtn.TextColor = System.Drawing.Color.White;
@@ -165,9 +172,10 @@ namespace PBL3.Views.AdminForms
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(466, 23);
+            this.label2.Location = new System.Drawing.Point(699, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 20);
+            this.label2.Size = new System.Drawing.Size(273, 32);
             this.label2.TabIndex = 13;
             this.label2.Text = "Lọc theo trạng thái thuê";
             // 
@@ -183,15 +191,16 @@ namespace PBL3.Views.AdminForms
             this.trangThaiThueCbb.ForeColor = System.Drawing.Color.DimGray;
             this.trangThaiThueCbb.IconColor = System.Drawing.Color.Green;
             this.trangThaiThueCbb.Items.AddRange(new object[] {
-            "100m^2",
-            "200m^2"});
+            "Đã có người thuê",
+            "Chưa có người thuê"});
             this.trangThaiThueCbb.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.trangThaiThueCbb.ListTextColor = System.Drawing.Color.DimGray;
-            this.trangThaiThueCbb.Location = new System.Drawing.Point(643, 12);
-            this.trangThaiThueCbb.MinimumSize = new System.Drawing.Size(200, 33);
+            this.trangThaiThueCbb.Location = new System.Drawing.Point(986, 19);
+            this.trangThaiThueCbb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.trangThaiThueCbb.MinimumSize = new System.Drawing.Size(300, 52);
             this.trangThaiThueCbb.Name = "trangThaiThueCbb";
-            this.trangThaiThueCbb.Padding = new System.Windows.Forms.Padding(3);
-            this.trangThaiThueCbb.Size = new System.Drawing.Size(200, 33);
+            this.trangThaiThueCbb.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.trangThaiThueCbb.Size = new System.Drawing.Size(300, 52);
             this.trangThaiThueCbb.TabIndex = 12;
             this.trangThaiThueCbb.Texts = "";
             // 
@@ -202,10 +211,9 @@ namespace PBL3.Views.AdminForms
             this.panelMenu.Controls.Add(this.readBtn);
             this.panelMenu.Controls.Add(this.confirmBtn);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMenu.Location = new System.Drawing.Point(0, 597);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMenu.Location = new System.Drawing.Point(0, 933);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(1112, 66);
+            this.panelMenu.Size = new System.Drawing.Size(1668, 103);
             this.panelMenu.TabIndex = 19;
             // 
             // panel1
@@ -218,9 +226,8 @@ namespace PBL3.Views.AdminForms
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1112, 64);
+            this.panel1.Size = new System.Drawing.Size(1668, 100);
             this.panel1.TabIndex = 20;
             // 
             // dataGridView1
@@ -230,25 +237,27 @@ namespace PBL3.Views.AdminForms
             this.dataGridView1.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 100);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1112, 533);
+            this.dataGridView1.Size = new System.Drawing.Size(1668, 833);
             this.dataGridView1.TabIndex = 21;
             // 
             // ArticleManagementForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PBL3.Properties.Resources.Thiết_kế_chưa_có_tên;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1112, 663);
+            this.ClientSize = new System.Drawing.Size(1668, 1036);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ArticleManagementForm";
             this.Text = "ArticleManagementForm";
             this.panelMenu.ResumeLayout(false);

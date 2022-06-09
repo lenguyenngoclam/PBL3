@@ -81,7 +81,7 @@ namespace PBL3.DAL
             context.Posts.AddRange(new Post[]
             {
                 new Post {PostID = 1, UserID = 2, AddressID = 1, Title = "Cho thuê trọ tại BK ĐN", Description = "Trọ bao đẹp",
-                            Price = 1300000, Square = 22.5f, BeingPosted = false, BeingRented = false,
+                            Price = 1300000, Square = 22.5f, BeingPosted = true, BeingRented = false,
                             CreatedAt = DateTime.Now, PublishedAt = null, ModifiedAt = null
                 },
                 new Post {PostID = 2, UserID = 2, AddressID = 2, Title = "Cho thuê trọ tại ĐH KT ĐN", Description = "Trọ bao đẹp",

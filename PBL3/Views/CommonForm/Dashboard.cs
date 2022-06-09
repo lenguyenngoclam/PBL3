@@ -24,15 +24,14 @@ namespace PBL3.Views.CommonForm
         public Dashboard()
         {
             InitializeComponent();
-            numberOfPosts = PostBLL.GetToTalNumberOfPosts();
-            postNum = (numberOfPosts - currentPage * 5 < 5) ? numberOfPosts - currentPage * 5 : 5; 
-            totalPage = (int)Math.Ceiling(PostBLL.GetToTalNumberOfPosts() / Convert.ToDouble(skipNum));
             ShowPosts();
         }
 
         private void ShowPosts()
         {
+            numberOfPosts = PostBLL.GetTotalNumberOfPostedPosts();
             postNum = (numberOfPosts - currentPage * 5 < 5) ? numberOfPosts - currentPage * 5 : 5;
+            totalPage = (int)Math.Ceiling(numberOfPosts/ Convert.ToDouble(skipNum));
             DisplayHouseInformation();
             List<PostViewDTO> postView = PostBLL.GetPosts(currentPage * skipNum, postNum);
 

@@ -11,11 +11,11 @@ namespace PBL3.BLL
 {
     public class PostBLL
     {
-        public static int GetToTalNumberOfPosts()
+        public static int GetTotalNumberOfPostedPosts()
         {
-            using(var context = new MyData())
+            using (var context = new MyData())
             {
-                return context.Posts.ToList().Count;
+                return context.Posts.Where(post => post.BeingPosted == true).ToList().Count;
             }
         }
 
@@ -111,6 +111,24 @@ namespace PBL3.BLL
             using (var context = new MyData())
             {
                 return context.Posts.Where(p => p.PostID == postID).FirstOrDefault().AddressID;      
+            }
+        }
+
+        public static bool CheckPosted(int postID)
+        {
+            using (var context = new MyData())
+            {
+                return context.Posts.Where(p => p.PostID == postID).FirstOrDefault().BeingPosted;
+            }
+        }
+
+        public static void BrowsePost(int postID)
+        {
+            using (var context = new MyData())
+            {
+                var post = context.Posts.Where(p => p.PostID == postID).FirstOrDefault();
+                post.BeingPosted = true;
+                context.SaveChanges();
             }
         }
     }
