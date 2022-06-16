@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -129,6 +130,26 @@ namespace PBL3.BLL
                 var post = context.Posts.Where(p => p.PostID == postID).FirstOrDefault();
                 post.BeingPosted = true;
                 context.SaveChanges();
+            }
+        }
+
+        public static List<object> GetDataGridViewPost()
+        {
+            using (var context = new MyData())
+            {
+                IEnumerable<object> posts = context.Posts.Select(post => new
+                {
+                    PostID = post.PostID,
+                    UserID = post.UserID,
+                    Address = post.AddressID,
+                    Title = post.Title,
+                    Description = post.Description,
+                    Price = post.Price,
+                    Area = post.Square,
+                    Posted = post.BeingPosted,
+                    Rented = post.BeingRented
+                });
+                return posts.ToList();
             }
         }
     }
