@@ -17,24 +17,55 @@ namespace PBL3.Views.CustomerForm
         public ArticleManagementForm()
         {
             InitializeComponent();
+            UpdateDatagridView();
         }
 
+        private void UpdateDatagridView()
+        {
+            dataGridView1.DataSource = PostBLL.GetDataGridViewPost();
+        }
         private void readBtn_Click(object sender, EventArgs e)
         {
-            HouseInformationForm form = new HouseInformationForm(3);
-            form.Show();
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Hãy chọn 1 bài đăng!");
+                return;
+            }
+            else if (dataGridView1.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("Chỉ được xem mỗi lần 1 bài đăng");
+                return;
+            }
+            int postID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            HouseInformationForm form = new HouseInformationForm(postID);
+            form.Visible = false;
+            form.ShowDialog();
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            ArticleUpdateForm form = new ArticleUpdateForm(2);
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Hãy chọn 1 bài đăng!");
+                return;
+            }
+            else if (dataGridView1.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("Chỉ được cập nhật mỗi lần 1 bài đăng");
+                return;
+            }
+            int postID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            ArticleUpdateForm form = new ArticleUpdateForm(postID);
+            form.Visible = false;
             form.ShowDialog();
+            UpdateDatagridView();
         }
 
         private void uploadBtn_Click(object sender, EventArgs e)
         {
             ArticlePostingForm form = new ArticlePostingForm();
             form.ShowDialog();
+            UpdateDatagridView();
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
@@ -44,8 +75,12 @@ namespace PBL3.Views.CustomerForm
                 MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                PostBLL.DeletePost(2);
+                foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+                {
+                    PostBLL.DeletePost(Convert.ToInt32(row.Cells["PostID"].Value.ToString()));
+                }
                 MessageBox.Show("Xoá thành công!");
+                UpdateDatagridView();
             }
             else
                 return;

@@ -29,117 +29,34 @@ namespace PBL3.Views.CustomerForm
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.deleteBtn = new PBL3.Views.CustomComponents.CustomButton();
-            this.uploadBtn = new PBL3.Views.CustomComponents.CustomButton();
-            this.updateBtn = new PBL3.Views.CustomComponents.CustomButton();
-            this.readBtn = new PBL3.Views.CustomComponents.CustomButton();
-            this.searchBtn = new PBL3.Views.CustomComponents.CustomButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.trangThaiThueCbb = new PBL3.Views.CustomComponents.CustomComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maBai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.linkAnh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tieuDe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dienTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayDang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khuVuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangThaiThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.searchBtn = new PBL3.Views.CustomComponents.CustomButton();
+            this.trangThaiThueCbb = new PBL3.Views.CustomComponents.CustomComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.updateBtn = new PBL3.Views.CustomComponents.CustomButton();
+            this.uploadBtn = new PBL3.Views.CustomComponents.CustomButton();
+            this.readBtn = new PBL3.Views.CustomComponents.CustomButton();
+            this.deleteBtn = new PBL3.Views.CustomComponents.CustomButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // deleteBtn
+            // panelMenu
             // 
-            this.deleteBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.deleteBtn.BackColor = System.Drawing.Color.Green;
-            this.deleteBtn.BackgroundColor = System.Drawing.Color.Green;
-            this.deleteBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.deleteBtn.BorderRadius = 20;
-            this.deleteBtn.BorderSize = 0;
-            this.deleteBtn.FlatAppearance.BorderSize = 0;
-            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteBtn.Location = new System.Drawing.Point(200, 22);
-            this.deleteBtn.Name = "deleteBtn";
-            this.deleteBtn.Size = new System.Drawing.Size(212, 52);
-            this.deleteBtn.TabIndex = 17;
-            this.deleteBtn.Text = "Xoá bài đăng";
-            this.deleteBtn.TextColor = System.Drawing.Color.White;
-            this.deleteBtn.UseVisualStyleBackColor = false;
-            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
-            // 
-            // uploadBtn
-            // 
-            this.uploadBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.uploadBtn.BackColor = System.Drawing.Color.Green;
-            this.uploadBtn.BackgroundColor = System.Drawing.Color.Green;
-            this.uploadBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.uploadBtn.BorderRadius = 20;
-            this.uploadBtn.BorderSize = 0;
-            this.uploadBtn.FlatAppearance.BorderSize = 0;
-            this.uploadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.uploadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uploadBtn.ForeColor = System.Drawing.Color.White;
-            this.uploadBtn.Location = new System.Drawing.Point(1326, 22);
-            this.uploadBtn.Name = "uploadBtn";
-            this.uploadBtn.Size = new System.Drawing.Size(212, 52);
-            this.uploadBtn.TabIndex = 16;
-            this.uploadBtn.Text = "Đăng bài";
-            this.uploadBtn.TextColor = System.Drawing.Color.White;
-            this.uploadBtn.UseVisualStyleBackColor = false;
-            this.uploadBtn.Click += new System.EventHandler(this.uploadBtn_Click);
-            // 
-            // updateBtn
-            // 
-            this.updateBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.updateBtn.BackColor = System.Drawing.Color.Green;
-            this.updateBtn.BackgroundColor = System.Drawing.Color.Green;
-            this.updateBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.updateBtn.BorderRadius = 20;
-            this.updateBtn.BorderSize = 0;
-            this.updateBtn.FlatAppearance.BorderSize = 0;
-            this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateBtn.ForeColor = System.Drawing.Color.White;
-            this.updateBtn.Location = new System.Drawing.Point(864, 22);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(212, 52);
-            this.updateBtn.TabIndex = 15;
-            this.updateBtn.Text = "Cập nhật bài đăng";
-            this.updateBtn.TextColor = System.Drawing.Color.White;
-            this.updateBtn.UseVisualStyleBackColor = false;
-            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
-            // 
-            // readBtn
-            // 
-            this.readBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.readBtn.BackColor = System.Drawing.Color.Green;
-            this.readBtn.BackgroundColor = System.Drawing.Color.Green;
-            this.readBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.readBtn.BorderRadius = 20;
-            this.readBtn.BorderSize = 0;
-            this.readBtn.FlatAppearance.BorderSize = 0;
-            this.readBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.readBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.readBtn.ForeColor = System.Drawing.Color.White;
-            this.readBtn.Location = new System.Drawing.Point(534, 22);
-            this.readBtn.Name = "readBtn";
-            this.readBtn.Size = new System.Drawing.Size(212, 52);
-            this.readBtn.TabIndex = 14;
-            this.readBtn.Text = "Xem bài đăng";
-            this.readBtn.TextColor = System.Drawing.Color.White;
-            this.readBtn.UseVisualStyleBackColor = false;
-            this.readBtn.Click += new System.EventHandler(this.readBtn_Click);
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(140)))), ((int)(((byte)(153)))));
+            this.panelMenu.Controls.Add(this.label2);
+            this.panelMenu.Controls.Add(this.trangThaiThueCbb);
+            this.panelMenu.Controls.Add(this.searchBtn);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(1656, 97);
+            this.panelMenu.TabIndex = 19;
             // 
             // searchBtn
             // 
@@ -160,17 +77,6 @@ namespace PBL3.Views.CustomerForm
             this.searchBtn.Text = "Tìm kiếm";
             this.searchBtn.TextColor = System.Drawing.Color.White;
             this.searchBtn.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(239, 26);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Lọc theo trạng thái thuê";
             // 
             // trangThaiThueCbb
             // 
@@ -196,127 +102,16 @@ namespace PBL3.Views.CustomerForm
             this.trangThaiThueCbb.TabIndex = 11;
             this.trangThaiThueCbb.Texts = "";
             // 
-            // dataGridView1
+            // label2
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Lime;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maBai,
-            this.linkAnh,
-            this.tieuDe,
-            this.gia,
-            this.dienTich,
-            this.ngayDang,
-            this.khuVuc,
-            this.trangThaiThue});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 82;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1656, 962);
-            this.dataGridView1.TabIndex = 10;
-            // 
-            // maBai
-            // 
-            this.maBai.HeaderText = "Mã Bài";
-            this.maBai.MinimumWidth = 10;
-            this.maBai.Name = "maBai";
-            this.maBai.ReadOnly = true;
-            this.maBai.Width = 200;
-            // 
-            // linkAnh
-            // 
-            this.linkAnh.HeaderText = "Link Ảnh";
-            this.linkAnh.MinimumWidth = 10;
-            this.linkAnh.Name = "linkAnh";
-            this.linkAnh.ReadOnly = true;
-            this.linkAnh.Width = 200;
-            // 
-            // tieuDe
-            // 
-            this.tieuDe.HeaderText = "Tiêu Đề";
-            this.tieuDe.MinimumWidth = 10;
-            this.tieuDe.Name = "tieuDe";
-            this.tieuDe.ReadOnly = true;
-            this.tieuDe.Width = 200;
-            // 
-            // gia
-            // 
-            this.gia.HeaderText = "Giá";
-            this.gia.MinimumWidth = 10;
-            this.gia.Name = "gia";
-            this.gia.ReadOnly = true;
-            this.gia.Width = 200;
-            // 
-            // dienTich
-            // 
-            this.dienTich.HeaderText = "Diện Tích";
-            this.dienTich.MinimumWidth = 10;
-            this.dienTich.Name = "dienTich";
-            this.dienTich.ReadOnly = true;
-            this.dienTich.Width = 200;
-            // 
-            // ngayDang
-            // 
-            this.ngayDang.HeaderText = "Ngày Đăng";
-            this.ngayDang.MinimumWidth = 10;
-            this.ngayDang.Name = "ngayDang";
-            this.ngayDang.ReadOnly = true;
-            this.ngayDang.Width = 200;
-            // 
-            // khuVuc
-            // 
-            this.khuVuc.HeaderText = "Khu Vực";
-            this.khuVuc.MinimumWidth = 10;
-            this.khuVuc.Name = "khuVuc";
-            this.khuVuc.ReadOnly = true;
-            this.khuVuc.Width = 200;
-            // 
-            // trangThaiThue
-            // 
-            this.trangThaiThue.HeaderText = "Trạng Thái Thuê";
-            this.trangThaiThue.MinimumWidth = 10;
-            this.trangThaiThue.Name = "trangThaiThue";
-            this.trangThaiThue.ReadOnly = true;
-            this.trangThaiThue.Width = 200;
-            // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(140)))), ((int)(((byte)(153)))));
-            this.panelMenu.Controls.Add(this.label2);
-            this.panelMenu.Controls.Add(this.trangThaiThueCbb);
-            this.panelMenu.Controls.Add(this.searchBtn);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(1656, 97);
-            this.panelMenu.TabIndex = 18;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(75, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(239, 26);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Lọc theo trạng thái thuê";
             // 
             // panel1
             // 
@@ -331,15 +126,115 @@ namespace PBL3.Views.CustomerForm
             this.panel1.Size = new System.Drawing.Size(1656, 97);
             this.panel1.TabIndex = 20;
             // 
+            // updateBtn
+            // 
+            this.updateBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.updateBtn.BackColor = System.Drawing.Color.Green;
+            this.updateBtn.BackgroundColor = System.Drawing.Color.Green;
+            this.updateBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.updateBtn.BorderRadius = 20;
+            this.updateBtn.BorderSize = 0;
+            this.updateBtn.FlatAppearance.BorderSize = 0;
+            this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBtn.ForeColor = System.Drawing.Color.White;
+            this.updateBtn.Location = new System.Drawing.Point(864, 22);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(212, 52);
+            this.updateBtn.TabIndex = 15;
+            this.updateBtn.Text = "Cập nhật bài đăng";
+            this.updateBtn.TextColor = System.Drawing.Color.White;
+            this.updateBtn.UseVisualStyleBackColor = false;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
+            // 
+            // uploadBtn
+            // 
+            this.uploadBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uploadBtn.BackColor = System.Drawing.Color.Green;
+            this.uploadBtn.BackgroundColor = System.Drawing.Color.Green;
+            this.uploadBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.uploadBtn.BorderRadius = 20;
+            this.uploadBtn.BorderSize = 0;
+            this.uploadBtn.FlatAppearance.BorderSize = 0;
+            this.uploadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uploadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uploadBtn.ForeColor = System.Drawing.Color.White;
+            this.uploadBtn.Location = new System.Drawing.Point(1326, 22);
+            this.uploadBtn.Name = "uploadBtn";
+            this.uploadBtn.Size = new System.Drawing.Size(212, 52);
+            this.uploadBtn.TabIndex = 16;
+            this.uploadBtn.Text = "Đăng bài";
+            this.uploadBtn.TextColor = System.Drawing.Color.White;
+            this.uploadBtn.UseVisualStyleBackColor = false;
+            this.uploadBtn.Click += new System.EventHandler(this.uploadBtn_Click);
+            // 
+            // readBtn
+            // 
+            this.readBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.readBtn.BackColor = System.Drawing.Color.Green;
+            this.readBtn.BackgroundColor = System.Drawing.Color.Green;
+            this.readBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.readBtn.BorderRadius = 20;
+            this.readBtn.BorderSize = 0;
+            this.readBtn.FlatAppearance.BorderSize = 0;
+            this.readBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.readBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.readBtn.ForeColor = System.Drawing.Color.White;
+            this.readBtn.Location = new System.Drawing.Point(534, 22);
+            this.readBtn.Name = "readBtn";
+            this.readBtn.Size = new System.Drawing.Size(212, 52);
+            this.readBtn.TabIndex = 14;
+            this.readBtn.Text = "Xem bài đăng";
+            this.readBtn.TextColor = System.Drawing.Color.White;
+            this.readBtn.UseVisualStyleBackColor = false;
+            this.readBtn.Click += new System.EventHandler(this.readBtn_Click);
+            // 
+            // deleteBtn
+            // 
+            this.deleteBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.deleteBtn.BackColor = System.Drawing.Color.Green;
+            this.deleteBtn.BackgroundColor = System.Drawing.Color.Green;
+            this.deleteBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.deleteBtn.BorderRadius = 20;
+            this.deleteBtn.BorderSize = 0;
+            this.deleteBtn.FlatAppearance.BorderSize = 0;
+            this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteBtn.ForeColor = System.Drawing.Color.White;
+            this.deleteBtn.Location = new System.Drawing.Point(200, 22);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(212, 52);
+            this.deleteBtn.TabIndex = 17;
+            this.deleteBtn.Text = "Xoá bài đăng";
+            this.deleteBtn.TextColor = System.Drawing.Color.White;
+            this.deleteBtn.UseVisualStyleBackColor = false;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(140)))), ((int)(((byte)(153)))));
             this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.panelMenu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1656, 962);
             this.panel2.TabIndex = 21;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 97);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
+            this.dataGridView1.RowTemplate.Height = 33;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1656, 768);
+            this.dataGridView1.TabIndex = 21;
             // 
             // ArticleManagementForm
             // 
@@ -348,40 +243,30 @@ namespace PBL3.Views.CustomerForm
             this.BackgroundImage = global::PBL3.Properties.Resources.loginBackgroundImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1656, 962);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panel2);
             this.Name = "ArticleManagementForm";
             this.Text = "ArticleManagementForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CustomComponents.CustomButton deleteBtn;
-        private CustomComponents.CustomButton uploadBtn;
-        private CustomComponents.CustomButton updateBtn;
-        private CustomComponents.CustomButton readBtn;
-        private CustomComponents.CustomButton searchBtn;
+        private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Label label2;
         private CustomComponents.CustomComboBox trangThaiThueCbb;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maBai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn linkAnh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tieuDe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dienTich;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngayDang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn khuVuc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn trangThaiThue;
-        private System.Windows.Forms.Panel panelMenu;
+        private CustomComponents.CustomButton searchBtn;
         private System.Windows.Forms.Panel panel1;
+        private CustomComponents.CustomButton deleteBtn;
+        private CustomComponents.CustomButton readBtn;
+        private CustomComponents.CustomButton uploadBtn;
+        private CustomComponents.CustomButton updateBtn;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
